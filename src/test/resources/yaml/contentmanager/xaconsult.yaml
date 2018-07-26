@@ -1,0 +1,18 @@
+contentmanager_memu:
+  type: "className"
+  value: "nav-label"
+xaconsult_memu:
+  type: "xpath"
+  value: "//*[@id='side-menu']/li[2]/ul/li[1]/a"
+title:
+  type: "className"
+  value: "ibox-title"
+title_input:
+  type: "className"
+  value: "form-control"
+search_button:
+  type: "xpath"
+  value: "/html/body/div/div/div/div/div[2]/div/div/div[1]/div[2]/button"
+table_tr:
+  type: "className"
+  value: "bootstrap-table"

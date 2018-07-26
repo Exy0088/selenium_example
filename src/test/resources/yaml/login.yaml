@@ -1,0 +1,9 @@
+username:
+  type: "id"
+  value: "username"
+password:
+  type: "id"
+  value: "password"
+login_button:
+  type: "xpath"
+  value: "/html/body/div/form/div[4]/button"

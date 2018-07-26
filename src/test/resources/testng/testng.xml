@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="自动化登录测试">
+    <parameter name="${testBrowser}" value="${testBrowser}"/>
+    <test verbose="2" preserve-order="true" name="登录成功Case">
+        <classes>
+            <class name="test.LoginCase">
+                <methods>
+                    <include name="loginSuccess"/>
+                    <!--<include name="loginFail"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="登录失败Case">
+        <classes>
+            <class name="test.LoginCase">
+                <methods>
+                    <!--<include name="loginSuccess"/>-->
+                    <include name="loginFail"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <!--<listener class-name="io.qameta.allure.testng.AllureTestNg"/>-->
+        <!--<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>-->
+        <!--<listener class-name="ru.yandex.qatools.allure.testng.AllureTestListener"/>-->
+    </listeners>
+</suite>
