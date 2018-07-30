@@ -461,7 +461,6 @@ public class ExcelUtils {
                 readData = reader.read(hedear, list.get(i), list.get(i), beanType);
                 readDataList.add(readData);
             }
-            System.out.println(readData.size());
         }
         return readDataList;
   }
