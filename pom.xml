@@ -52,11 +52,6 @@
             <artifactId>jyaml</artifactId>
             <version>${yaml.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>RELEASE</version>
-        </dependency>
         <!-- 依赖reportNg 关联testNg -->
         <dependency>
             <groupId>org.uncommons</groupId>
