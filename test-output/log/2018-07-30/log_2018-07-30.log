@@ -1,0 +1,508 @@
+[2018-07-30 11:37:18,207] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 11:37:21,852] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 11:37:21,852] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 11:37:22,913] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 11:37:23,272] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (42afb1f6-b169-47da-ad31-d21d7bd4a59b)] -> id: username]ÊäÈëÖµ£ºexy0088
+[2018-07-30 11:37:23,317] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (42afb1f6-b169-47da-ad31-d21d7bd4a59b)] -> id: password]ÊäÈëÖµ£ºhezhaowei0210!
+[2018-07-30 11:37:29,108] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (42afb1f6-b169-47da-ad31-d21d7bd4a59b)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 11:37:29,108] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 11:37:29,138] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 11:37:30,462] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 11:37:30,945] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 11:37:34,931] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 11:37:34,931] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 11:37:35,811] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 11:37:36,092] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (166b079a-82a7-45f1-b488-3927156a6e19)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 11:37:36,092] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 11:37:36,108] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 11:37:37,269] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 11:37:37,687] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 11:37:40,384] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 11:37:40,384] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 11:37:41,164] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 11:37:41,462] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (37440a2c-2ee2-44c4-8400-1581745dd94b)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 11:37:41,462] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 11:37:41,478] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 11:37:42,478] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 11:37:42,871] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 11:37:45,656] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 11:37:45,656] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 11:37:46,477] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 11:37:46,542] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (0c97769f-7b8e-45a5-8437-955da354496f)] -> id: username]ÊäÈëÖµ£ºexy0091
+[2018-07-30 11:37:46,798] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (0c97769f-7b8e-45a5-8437-955da354496f)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 11:37:46,813] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 11:37:46,829] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 11:37:47,867] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 12:11:50,917] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 12:11:54,453] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 12:11:54,453] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 12:11:55,367] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 12:11:55,835] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (76c7809d-2f6b-414f-b939-2c12649d7842)] -> id: username]ÊäÈëÖµ£ºexy0088
+[2018-07-30 12:11:55,944] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (76c7809d-2f6b-414f-b939-2c12649d7842)] -> id: password]ÊäÈëÖµ£ºhezhaowei0210!
+[2018-07-30 12:11:59,340] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (76c7809d-2f6b-414f-b939-2c12649d7842)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 12:11:59,340] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 12:11:59,364] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 12:12:00,415] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 12:12:01,042] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 12:12:03,806] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 12:12:03,806] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 12:12:04,747] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 12:12:05,028] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (10ca7df3-8e04-41a3-8406-9fa76cc881ab)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 12:12:05,028] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 12:12:05,043] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 12:12:06,204] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 12:12:06,629] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 12:12:09,399] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 12:12:09,399] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 12:12:10,524] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 12:12:10,820] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (727c19ce-eb56-49cc-a13b-41bc07923b3d)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 12:12:10,820] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 12:12:10,851] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 12:12:12,242] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 12:12:12,696] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 12:12:15,478] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 12:12:15,478] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 12:12:16,508] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 12:12:16,602] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (90d07c21-e0eb-4893-b463-6b201fc324a2)] -> id: username]ÊäÈëÖµ£ºexy0091
+[2018-07-30 12:12:16,885] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (90d07c21-e0eb-4893-b463-6b201fc324a2)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 12:12:16,885] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 12:12:16,901] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 12:12:17,887] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 12:19:52,701] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 12:19:56,308] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 12:19:56,308] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 12:19:57,215] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 12:19:57,513] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (a22f6f15-340c-4018-b461-b45d60f88f4c)] -> id: username]ÊäÈëÖµ£ºexy0088
+[2018-07-30 12:19:57,576] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (a22f6f15-340c-4018-b461-b45d60f88f4c)] -> id: password]ÊäÈëÖµ£ºhezhaowei0210!
+[2018-07-30 12:20:01,524] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (a22f6f15-340c-4018-b461-b45d60f88f4c)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 12:20:01,524] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 12:20:01,548] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 12:20:02,434] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 12:20:03,297] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 12:20:06,014] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 12:20:06,014] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 12:20:06,822] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 12:20:07,134] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (ae24e728-8622-4a56-8c9c-bb68ab946664)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 12:20:07,134] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 12:20:07,165] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 12:20:07,965] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 12:20:08,433] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 12:20:11,078] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 12:20:11,078] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 12:20:12,014] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 12:20:12,303] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (e381306f-0e8e-4c4d-a50b-a8e7363e6b21)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 12:20:12,304] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 12:20:12,346] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 12:20:13,566] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 12:20:13,989] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 12:20:16,684] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 12:20:16,684] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 12:20:17,577] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 12:20:17,639] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (c39f783f-db61-4f5b-abe4-6d462cfd7f4a)] -> id: username]ÊäÈëÖµ£ºexy0091
+[2018-07-30 12:20:17,904] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (c39f783f-db61-4f5b-abe4-6d462cfd7f4a)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 12:20:17,904] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 12:20:17,938] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 12:20:18,750] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 12:24:00,173] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 12:24:03,731] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 12:24:03,731] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 12:24:04,575] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 12:24:04,887] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (aef32714-dbfd-4a82-8529-c36b19e233a8)] -> id: username]ÊäÈëÖµ£ºexy0088
+[2018-07-30 12:24:04,949] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (aef32714-dbfd-4a82-8529-c36b19e233a8)] -> id: password]ÊäÈëÖµ£ºhezhaowei0210!
+[2018-07-30 12:24:05,231] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (aef32714-dbfd-4a82-8529-c36b19e233a8)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 12:24:05,231] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 12:24:05,256] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 12:24:06,513] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 12:31:28,287] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 12:31:35,087] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 12:31:38,699] INFO  base.BaseDriver åˆå§‹åŒ–ç«ç‹æµè§ˆå™¨
+[2018-07-30 12:31:38,699] INFO  base.BaseDriver ------------------å¼€å§‹æ‰§è¡Œæµ‹è¯•---------------
+[2018-07-30 12:31:39,583] INFO  base.BaseDriver æ‰“å¼€æµè§ˆå™¨ï¼Œè®¿é—®http://144.7.127.97:8085/loginç½‘å€!
+[2018-07-30 12:31:39,968] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (74b7ec0a-5c4a-49e2-a821-a0e34e4dd8d4)] -> id: username]è¾“å…¥å€¼ï¼šexy0088
+[2018-07-30 12:31:40,057] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (74b7ec0a-5c4a-49e2-a821-a0e34e4dd8d4)] -> id: password]è¾“å…¥å€¼ï¼šhezhaowei0210!
+[2018-07-30 12:32:42,071] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 12:32:45,768] INFO  base.BaseDriver åˆå§‹åŒ–ç«ç‹æµè§ˆå™¨
+[2018-07-30 12:32:45,768] INFO  base.BaseDriver ------------------å¼€å§‹æ‰§è¡Œæµ‹è¯•---------------
+[2018-07-30 12:32:46,611] INFO  base.BaseDriver æ‰“å¼€æµè§ˆå™¨ï¼Œè®¿é—®http://144.7.127.97:8085/loginç½‘å€!
+[2018-07-30 12:33:06,248] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (df90dea9-7b75-41f3-9631-38c0c1bb811f)] -> id: username]è¾“å…¥å€¼ï¼šexy0088
+[2018-07-30 12:33:06,313] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (df90dea9-7b75-41f3-9631-38c0c1bb811f)] -> id: password]è¾“å…¥å€¼ï¼šhezhaowei0210!
+[2018-07-30 12:33:10,823] INFO  handler.LoginHandler ç‚¹å‡»ï¼š[[FirefoxDriver: firefox on ANY (df90dea9-7b75-41f3-9631-38c0c1bb811f)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 12:33:10,824] INFO  utils.Assertion ã€AssertéªŒè¯ã€‘:é¡µé¢æ˜¯å¦å‡ºç°ã€é¢„æœŸå€¼ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒã€‘å­—ç¬¦ä¸²
+[2018-07-30 12:33:10,845] INFO  utils.Assertion é¡µé¢å‡ºç°ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒ
+[2018-07-30 12:35:31,332] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 12:35:34,891] INFO  base.BaseDriver åˆå§‹åŒ–ç«ç‹æµè§ˆå™¨
+[2018-07-30 12:35:34,891] INFO  base.BaseDriver ------------------å¼€å§‹æ‰§è¡Œæµ‹è¯•---------------
+[2018-07-30 12:35:35,721] INFO  base.BaseDriver æ‰“å¼€æµè§ˆå™¨ï¼Œè®¿é—®http://144.7.127.97:8085/loginç½‘å€!
+[2018-07-30 12:35:35,986] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (f226dbf2-51aa-441b-93e2-710b23fc9cc5)] -> id: username]è¾“å…¥å€¼ï¼šexy0088
+[2018-07-30 12:35:36,048] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (f226dbf2-51aa-441b-93e2-710b23fc9cc5)] -> id: password]è¾“å…¥å€¼ï¼šhezhaowei0210!
+[2018-07-30 12:35:39,287] INFO  handler.LoginHandler ç‚¹å‡»ï¼š[[FirefoxDriver: firefox on ANY (f226dbf2-51aa-441b-93e2-710b23fc9cc5)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 12:35:39,288] INFO  utils.Assertion ã€AssertéªŒè¯ã€‘:é¡µé¢æ˜¯å¦å‡ºç°ã€é¢„æœŸå€¼ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒã€‘å­—ç¬¦ä¸²
+[2018-07-30 12:35:39,311] INFO  utils.Assertion é¡µé¢å‡ºç°ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒ
+[2018-07-30 12:42:01,752] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 12:42:05,269] INFO  base.BaseDriver åˆå§‹åŒ–ç«ç‹æµè§ˆå™¨
+[2018-07-30 12:42:05,269] INFO  base.BaseDriver ------------------å¼€å§‹æ‰§è¡Œæµ‹è¯•---------------
+[2018-07-30 12:42:06,179] INFO  base.BaseDriver æ‰“å¼€æµè§ˆå™¨ï¼Œè®¿é—®http://144.7.127.97:8085/loginç½‘å€!
+[2018-07-30 12:42:06,578] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (11dea557-080f-4620-b896-b052c1a9805f)] -> id: username]è¾“å…¥å€¼ï¼šexy0088
+[2018-07-30 12:42:06,643] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (11dea557-080f-4620-b896-b052c1a9805f)] -> id: password]è¾“å…¥å€¼ï¼šhezhaowei0210!
+[2018-07-30 12:42:09,571] INFO  handler.LoginHandler ç‚¹å‡»ï¼š[[FirefoxDriver: firefox on ANY (11dea557-080f-4620-b896-b052c1a9805f)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 12:42:09,571] INFO  utils.Assertion ã€AssertéªŒè¯ã€‘:é¡µé¢æ˜¯å¦å‡ºç°ã€é¢„æœŸå€¼ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒã€‘å­—ç¬¦ä¸²
+[2018-07-30 12:42:09,591] INFO  utils.Assertion é¡µé¢å‡ºç°ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒ
+[2018-07-30 12:42:10,846] INFO  base.BaseDriver å…³é—­æµè§ˆå™¨
+[2018-07-30 12:44:07,031] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 12:44:10,553] INFO  base.BaseDriver åˆå§‹åŒ–ç«ç‹æµè§ˆå™¨
+[2018-07-30 12:44:10,553] INFO  base.BaseDriver ------------------å¼€å§‹æ‰§è¡Œæµ‹è¯•---------------
+[2018-07-30 12:44:11,334] INFO  base.BaseDriver æ‰“å¼€æµè§ˆå™¨ï¼Œè®¿é—®http://144.7.127.97:8085/loginç½‘å€!
+[2018-07-30 12:44:11,647] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (3458f8e6-461b-4220-b885-c35a0e8f7f6f)] -> id: username]è¾“å…¥å€¼ï¼šexy0088
+[2018-07-30 12:44:11,710] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (3458f8e6-461b-4220-b885-c35a0e8f7f6f)] -> id: password]è¾“å…¥å€¼ï¼šhezhaowei0210!
+[2018-07-30 12:44:14,985] INFO  handler.LoginHandler ç‚¹å‡»ï¼š[[FirefoxDriver: firefox on ANY (3458f8e6-461b-4220-b885-c35a0e8f7f6f)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 12:44:14,986] INFO  utils.Assertion ã€AssertéªŒè¯ã€‘:é¡µé¢æ˜¯å¦å‡ºç°ã€é¢„æœŸå€¼ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒã€‘å­—ç¬¦ä¸²
+[2018-07-30 12:44:15,013] INFO  utils.Assertion é¡µé¢å‡ºç°ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒ
+[2018-07-30 12:44:16,379] INFO  base.BaseDriver å…³é—­æµè§ˆå™¨
+[2018-07-30 12:47:18,758] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 12:47:22,398] INFO  base.BaseDriver åˆå§‹åŒ–ç«ç‹æµè§ˆå™¨
+[2018-07-30 12:47:22,398] INFO  base.BaseDriver ------------------å¼€å§‹æ‰§è¡Œæµ‹è¯•---------------
+[2018-07-30 12:47:23,634] INFO  base.BaseDriver æ‰“å¼€æµè§ˆå™¨ï¼Œè®¿é—®http://144.7.127.97:8085/loginç½‘å€!
+[2018-07-30 12:47:23,914] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (963980db-4880-438d-a005-6c05bda368b7)] -> id: username]è¾“å…¥å€¼ï¼šexy0088
+[2018-07-30 12:47:23,977] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (963980db-4880-438d-a005-6c05bda368b7)] -> id: password]è¾“å…¥å€¼ï¼šhezhaowei0210!
+[2018-07-30 12:47:24,242] INFO  handler.LoginHandler ç‚¹å‡»ï¼š[[FirefoxDriver: firefox on ANY (963980db-4880-438d-a005-6c05bda368b7)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 12:47:24,242] INFO  utils.Assertion ã€AssertéªŒè¯ã€‘:é¡µé¢æ˜¯å¦å‡ºç°ã€é¢„æœŸå€¼ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒã€‘å­—ç¬¦ä¸²
+[2018-07-30 12:47:24,296] INFO  utils.Assertion é¡µé¢å‡ºç°ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒ
+[2018-07-30 12:47:25,752] INFO  base.BaseDriver å…³é—­æµè§ˆå™¨
+[2018-07-30 12:48:18,217] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 12:48:21,761] INFO  base.BaseDriver åˆå§‹åŒ–ç«ç‹æµè§ˆå™¨
+[2018-07-30 12:48:21,761] INFO  base.BaseDriver ------------------å¼€å§‹æ‰§è¡Œæµ‹è¯•---------------
+[2018-07-30 12:48:22,578] INFO  base.BaseDriver æ‰“å¼€æµè§ˆå™¨ï¼Œè®¿é—®http://144.7.127.97:8085/loginç½‘å€!
+[2018-07-30 12:48:23,315] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (2d092818-ab17-421c-ac2b-045a6b1a99c2)] -> id: username]è¾“å…¥å€¼ï¼šexy0088
+[2018-07-30 12:48:23,378] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (2d092818-ab17-421c-ac2b-045a6b1a99c2)] -> id: password]è¾“å…¥å€¼ï¼šhezhaowei0210!
+[2018-07-30 12:48:26,697] INFO  handler.LoginHandler ç‚¹å‡»ï¼š[[FirefoxDriver: firefox on ANY (2d092818-ab17-421c-ac2b-045a6b1a99c2)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 12:48:26,697] INFO  utils.Assertion ã€AssertéªŒè¯ã€‘:é¡µé¢æ˜¯å¦å‡ºç°ã€é¢„æœŸå€¼ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒã€‘å­—ç¬¦ä¸²
+[2018-07-30 12:48:26,721] INFO  utils.Assertion é¡µé¢å‡ºç°ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒ
+[2018-07-30 12:48:28,097] INFO  base.BaseDriver å…³é—­æµè§ˆå™¨
+[2018-07-30 12:50:39,524] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 12:50:43,101] INFO  base.BaseDriver åˆå§‹åŒ–ç«ç‹æµè§ˆå™¨
+[2018-07-30 12:50:43,101] INFO  base.BaseDriver ------------------å¼€å§‹æ‰§è¡Œæµ‹è¯•---------------
+[2018-07-30 12:50:43,945] INFO  base.BaseDriver æ‰“å¼€æµè§ˆå™¨ï¼Œè®¿é—®http://144.7.127.97:8085/loginç½‘å€!
+[2018-07-30 12:50:44,235] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (661a368d-47ad-46ce-9daf-6beaa914f40c)] -> id: username]è¾“å…¥å€¼ï¼šexy0088
+[2018-07-30 12:50:44,296] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (661a368d-47ad-46ce-9daf-6beaa914f40c)] -> id: password]è¾“å…¥å€¼ï¼šhezhaowei0210!
+[2018-07-30 12:50:47,543] INFO  handler.LoginHandler ç‚¹å‡»ï¼š[[FirefoxDriver: firefox on ANY (661a368d-47ad-46ce-9daf-6beaa914f40c)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 12:50:47,543] INFO  utils.Assertion ã€AssertéªŒè¯ã€‘:é¡µé¢æ˜¯å¦å‡ºç°ã€é¢„æœŸå€¼ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒã€‘å­—ç¬¦ä¸²
+[2018-07-30 12:50:47,567] INFO  utils.Assertion é¡µé¢å‡ºç°ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒ
+[2018-07-30 12:50:48,840] INFO  base.BaseDriver å…³é—­æµè§ˆå™¨
+[2018-07-30 12:53:28,684] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 12:53:32,264] INFO  base.BaseDriver åˆå§‹åŒ–ç«ç‹æµè§ˆå™¨
+[2018-07-30 12:53:32,264] INFO  base.BaseDriver ------------------å¼€å§‹æ‰§è¡Œæµ‹è¯•---------------
+[2018-07-30 12:53:33,034] INFO  base.BaseDriver æ‰“å¼€æµè§ˆå™¨ï¼Œè®¿é—®http://144.7.127.97:8085/loginç½‘å€!
+[2018-07-30 12:53:33,324] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (9e1030f5-22f1-4a1b-a3f7-d564d6a388e4)] -> id: username]è¾“å…¥å€¼ï¼šexy0088
+[2018-07-30 12:53:33,392] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (9e1030f5-22f1-4a1b-a3f7-d564d6a388e4)] -> id: password]è¾“å…¥å€¼ï¼šhezhaowei0210!
+[2018-07-30 12:53:36,238] INFO  handler.LoginHandler ç‚¹å‡»ï¼š[[FirefoxDriver: firefox on ANY (9e1030f5-22f1-4a1b-a3f7-d564d6a388e4)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 12:53:36,238] INFO  utils.Assertion ã€AssertéªŒè¯ã€‘:é¡µé¢æ˜¯å¦å‡ºç°ã€é¢„æœŸå€¼ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒã€‘å­—ç¬¦ä¸²
+[2018-07-30 12:53:36,261] INFO  utils.Assertion é¡µé¢å‡ºç°ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒ
+[2018-07-30 12:53:37,553] INFO  base.BaseDriver å…³é—­æµè§ˆå™¨
+[2018-07-30 12:56:39,387] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 12:56:42,983] INFO  base.BaseDriver åˆå§‹åŒ–ç«ç‹æµè§ˆå™¨
+[2018-07-30 12:56:42,983] INFO  base.BaseDriver ------------------å¼€å§‹æ‰§è¡Œæµ‹è¯•---------------
+[2018-07-30 12:56:43,833] INFO  base.BaseDriver æ‰“å¼€æµè§ˆå™¨ï¼Œè®¿é—®http://144.7.127.97:8085/loginç½‘å€!
+[2018-07-30 12:56:44,146] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (13d74be6-6fa8-4f11-9cf8-24e0f9f17802)] -> id: username]è¾“å…¥å€¼ï¼šexy0088
+[2018-07-30 12:56:44,224] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (13d74be6-6fa8-4f11-9cf8-24e0f9f17802)] -> id: password]è¾“å…¥å€¼ï¼šhezhaowei0210!
+[2018-07-30 12:56:47,456] INFO  handler.LoginHandler ç‚¹å‡»ï¼š[[FirefoxDriver: firefox on ANY (13d74be6-6fa8-4f11-9cf8-24e0f9f17802)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 12:56:47,457] INFO  utils.Assertion ã€AssertéªŒè¯ã€‘:é¡µé¢æ˜¯å¦å‡ºç°ã€é¢„æœŸå€¼ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒã€‘å­—ç¬¦ä¸²
+[2018-07-30 12:56:47,481] INFO  utils.Assertion é¡µé¢å‡ºç°ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒ
+[2018-07-30 12:56:48,976] INFO  base.BaseDriver å…³é—­æµè§ˆå™¨
+[2018-07-30 13:12:14,955] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:12:18,924] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:12:18,924] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:12:19,721] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:12:19,908] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (9068eb42-e2ac-4a4e-8e90-9b9770e2a8fb)] -> id: username]ÊäÈëÖµ£ºexy0088
+[2018-07-30 13:12:19,970] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (9068eb42-e2ac-4a4e-8e90-9b9770e2a8fb)] -> id: password]ÊäÈëÖµ£ºhezhaowei0210!
+[2018-07-30 13:12:21,282] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (9068eb42-e2ac-4a4e-8e90-9b9770e2a8fb)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:12:21,282] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:15:43,658] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:15:47,566] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:15:47,566] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:15:48,644] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:15:49,112] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (967275e3-87cd-4fc2-920e-be4c5153ec96)] -> id: username]ÊäÈëÖµ£ºexy0088
+[2018-07-30 13:15:49,190] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (967275e3-87cd-4fc2-920e-be4c5153ec96)] -> id: password]ÊäÈëÖµ£ºhezhaowei0210!
+[2018-07-30 13:15:52,819] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (967275e3-87cd-4fc2-920e-be4c5153ec96)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:15:52,820] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:15:52,846] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:15:52,966] ERROR utils.screenshot.ScreenShot ´íÎó½ØÍ¼
+[2018-07-30 13:15:54,097] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:21:03,770] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:21:07,623] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:21:07,623] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:21:08,477] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:21:08,645] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (f843e8ae-b2e3-4276-8666-11662cc6f7ff)] -> id: username]ÊäÈëÖµ£ºexy0088
+[2018-07-30 13:21:08,707] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (f843e8ae-b2e3-4276-8666-11662cc6f7ff)] -> id: password]ÊäÈëÖµ£ºhezhaowei0210!
+[2018-07-30 13:21:11,645] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (f843e8ae-b2e3-4276-8666-11662cc6f7ff)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:21:11,646] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:21:11,668] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:21:11,786] ERROR utils.screenshot.ScreenShot ´íÎó½ØÍ¼
+[2018-07-30 13:21:13,203] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:36:25,348] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:36:30,325] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:36:30,326] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:36:31,624] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:36:31,806] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (5a1c7d08-a012-4ecb-9021-3eda0cb30f23)] -> id: username]ÊäÈëÖµ£ºexy0088
+[2018-07-30 13:36:31,880] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (5a1c7d08-a012-4ecb-9021-3eda0cb30f23)] -> id: password]ÊäÈëÖµ£ºhezhaowei0210!
+[2018-07-30 13:36:34,766] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (5a1c7d08-a012-4ecb-9021-3eda0cb30f23)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:36:34,766] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:36:34,789] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:36:34,909] ERROR utils.screenshot.ScreenShot ´íÎó½ØÍ¼
+[2018-07-30 13:36:36,071] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:36:37,014] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:36:39,720] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:36:39,721] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:36:40,790] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:36:41,057] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (f99f24a5-68c9-4e54-ae86-2b73ce44248b)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:36:41,058] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:36:41,090] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:36:42,230] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:36:42,609] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:36:45,381] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:36:45,381] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:36:46,232] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:36:46,487] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (c1410558-f2f2-470e-b92f-fdf59c57df3f)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:36:46,488] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:36:46,507] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:36:46,841] ERROR utils.screenshot.ScreenShot ´íÎó½ØÍ¼
+[2018-07-30 13:36:47,857] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:36:48,280] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:36:51,061] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:36:51,061] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:36:51,884] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:36:51,972] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (4f020fe3-7f7d-4213-bf83-df48731b1d75)] -> id: username]ÊäÈëÖµ£ºexy0091
+[2018-07-30 13:36:52,221] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (4f020fe3-7f7d-4213-bf83-df48731b1d75)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:36:52,222] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:36:52,256] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:36:53,158] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:36:53,675] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:36:56,368] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:36:56,368] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:36:57,179] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:36:57,250] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (7be9a20b-bf97-482e-a867-96f43f8b1ad1)] -> id: username]ÊäÈëÖµ£ºexy0092
+[2018-07-30 13:36:57,499] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (7be9a20b-bf97-482e-a867-96f43f8b1ad1)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:36:57,500] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:36:57,523] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:36:58,397] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:36:58,933] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:37:01,883] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:37:01,883] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:37:02,697] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:37:02,784] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (076c014b-e588-439f-8a65-5973f0c24f12)] -> id: username]ÊäÈëÖµ£ºexy0093
+[2018-07-30 13:37:03,035] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (076c014b-e588-439f-8a65-5973f0c24f12)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:37:03,036] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:37:03,054] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:37:03,894] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:37:04,512] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:37:07,249] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:37:07,249] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:37:08,128] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:37:08,204] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (4a8ae0f8-1026-4183-b618-2ed7e61f0f9b)] -> id: username]ÊäÈëÖµ£ºexy0094
+[2018-07-30 13:37:08,461] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (4a8ae0f8-1026-4183-b618-2ed7e61f0f9b)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:37:08,462] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:37:08,478] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:37:09,326] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:37:09,979] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:37:13,850] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:37:13,850] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:37:14,719] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:37:14,808] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (698218fa-f765-4fff-a0c3-e13d7ed718d8)] -> id: username]ÊäÈëÖµ£ºexy0095
+[2018-07-30 13:37:15,059] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (698218fa-f765-4fff-a0c3-e13d7ed718d8)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:37:15,059] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:37:15,084] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:37:15,963] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:37:16,529] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:37:19,260] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:37:19,260] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:37:20,056] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:37:20,148] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (b435a3c5-8fd0-4e56-bb21-d14eb53fd870)] -> id: username]ÊäÈëÖµ£ºexy0096
+[2018-07-30 13:37:20,424] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (b435a3c5-8fd0-4e56-bb21-d14eb53fd870)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:37:20,424] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:37:20,458] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:37:21,282] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:37:21,791] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:37:24,548] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:37:24,549] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:37:25,322] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:37:25,391] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (c2c25620-bc32-4bd6-a7e8-c06492d4a661)] -> id: username]ÊäÈëÖµ£ºexy0097
+[2018-07-30 13:37:25,652] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (c2c25620-bc32-4bd6-a7e8-c06492d4a661)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:37:25,653] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:37:25,680] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:37:26,556] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:37:27,058] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:37:29,785] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:37:29,786] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:37:30,518] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:37:30,592] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (8c140803-d1d2-4aee-9e0b-bb20a83eded4)] -> id: username]ÊäÈëÖµ£ºexy0098
+[2018-07-30 13:37:30,847] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (8c140803-d1d2-4aee-9e0b-bb20a83eded4)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:37:30,847] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:37:30,865] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:37:31,805] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:37:32,344] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:37:35,080] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:37:35,080] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:37:36,210] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:37:36,297] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (94972aeb-824b-4d60-afee-3a5f13ac6f7f)] -> id: username]ÊäÈëÖµ£ºexy0099
+[2018-07-30 13:37:36,553] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (94972aeb-824b-4d60-afee-3a5f13ac6f7f)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:37:36,553] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:37:36,582] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:37:37,743] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:37:38,170] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:37:40,888] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:37:40,888] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:37:41,784] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:37:41,839] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (701879f4-6713-41f6-a698-a551fbcfe05d)] -> id: username]ÊäÈëÖµ£ºexy0100
+[2018-07-30 13:37:42,093] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (701879f4-6713-41f6-a698-a551fbcfe05d)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:37:42,094] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:37:42,117] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:37:43,270] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:37:43,672] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:37:46,395] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:37:46,395] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:37:47,289] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:37:47,381] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (f136f109-cdd0-412a-963a-2cf65aa6eeaf)] -> id: username]ÊäÈëÖµ£ºexy0101
+[2018-07-30 13:37:47,624] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (f136f109-cdd0-412a-963a-2cf65aa6eeaf)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:37:47,624] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:37:47,640] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:37:48,695] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:37:49,166] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:37:51,919] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:37:51,919] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:37:52,831] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:37:52,905] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (91255581-eb2c-4236-80b8-2d0993000361)] -> id: username]ÊäÈëÖµ£ºexy0102
+[2018-07-30 13:37:53,156] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (91255581-eb2c-4236-80b8-2d0993000361)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:37:53,156] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:37:53,184] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:37:54,043] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:37:54,470] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:37:57,172] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:37:57,172] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:37:57,957] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:37:58,043] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (34aa3bc8-9063-498d-8970-f2d1f3918d13)] -> id: username]ÊäÈëÖµ£ºexy0103
+[2018-07-30 13:37:58,296] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (34aa3bc8-9063-498d-8970-f2d1f3918d13)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:37:58,296] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:37:58,344] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:37:59,219] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:37:59,715] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:38:02,446] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:38:02,446] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:38:03,244] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:38:03,312] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (0b3787ea-2135-4e5d-9c2b-75fc4483c49f)] -> id: password]ÊäÈëÖµ£ºhezhaowei0210!
+[2018-07-30 13:38:03,562] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (0b3787ea-2135-4e5d-9c2b-75fc4483c49f)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:38:03,563] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:38:03,587] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:38:04,447] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:38:04,853] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:38:07,544] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:38:07,544] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:38:08,259] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:38:08,344] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (c7f3f8cd-baf5-4519-ad5f-21138309e780)] -> id: password]ÊäÈëÖµ£ºhezhaowei0211!
+[2018-07-30 13:38:08,595] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (c7f3f8cd-baf5-4519-ad5f-21138309e780)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:38:08,596] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:38:08,626] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:38:09,615] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:38:10,086] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:38:12,839] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:38:12,840] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:38:13,644] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:38:13,728] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (220aa31c-9a43-4142-9ec3-8e921f037ab5)] -> id: password]ÊäÈëÖµ£ºhezhaowei0212!
+[2018-07-30 13:38:13,992] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (220aa31c-9a43-4142-9ec3-8e921f037ab5)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:38:13,993] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:38:14,024] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:38:14,912] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:38:15,491] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:38:18,279] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:38:18,279] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:38:19,125] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:38:19,198] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (61834ae5-f1da-4daa-a0d9-3b68851a31cc)] -> id: password]ÊäÈëÖµ£ºhezhaowei0213!
+[2018-07-30 13:38:19,447] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (61834ae5-f1da-4daa-a0d9-3b68851a31cc)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:38:19,447] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:38:19,475] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:38:20,325] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:38:20,855] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:38:23,790] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:38:23,790] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:38:24,613] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:38:24,704] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (e5980928-8bf5-40a9-b8d8-4bb11ea9ad8b)] -> id: password]ÊäÈëÖµ£ºhezhaowei0214!
+[2018-07-30 13:38:24,961] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (e5980928-8bf5-40a9-b8d8-4bb11ea9ad8b)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:38:24,961] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:38:24,978] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:38:26,013] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 13:38:26,453] INFO  base.BaseDriver ¶ÁÈ¡ä¯ÀÀÆ÷²¢½«Æä³õÊ¼»¯
+[2018-07-30 13:38:29,304] INFO  base.BaseDriver ³õÊ¼»¯»ğºüä¯ÀÀÆ÷
+[2018-07-30 13:38:29,304] INFO  base.BaseDriver ------------------¿ªÊ¼Ö´ĞĞ²âÊÔ---------------
+[2018-07-30 13:38:30,198] INFO  base.BaseDriver ´ò¿ªä¯ÀÀÆ÷£¬·ÃÎÊhttp://144.7.127.97:8085/loginÍøÖ·!
+[2018-07-30 13:38:30,266] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (1f086c6f-29dc-4674-abc0-3ae9d6111942)] -> id: password]ÊäÈëÖµ£ºhezhaowei0215!
+[2018-07-30 13:38:30,520] INFO  handler.LoginHandler µã»÷£º[[FirefoxDriver: firefox on ANY (1f086c6f-29dc-4674-abc0-3ae9d6111942)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 13:38:30,521] INFO  utils.Assertion ¡¾AssertÑéÖ¤¡¿:Ò³ÃæÊÇ·ñ³öÏÖ¡¾Ô¤ÆÚÖµ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ¡¿×Ö·û´®
+[2018-07-30 13:38:30,551] INFO  utils.Assertion Ò³Ãæ³öÏÖ£ºĞÛ°²ÊĞÃñ·şÎñÖĞĞÄ
+[2018-07-30 13:38:31,532] INFO  base.BaseDriver ¹Ø±Õä¯ÀÀÆ÷
+[2018-07-30 14:01:01,542] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 14:01:06,103] INFO  base.BaseDriver åˆå§‹åŒ–ç«ç‹æµè§ˆå™¨
+[2018-07-30 14:01:06,103] INFO  base.BaseDriver ------------------å¼€å§‹æ‰§è¡Œæµ‹è¯•---------------
+[2018-07-30 14:01:07,092] INFO  base.BaseDriver æ‰“å¼€æµè§ˆå™¨ï¼Œè®¿é—®http://144.7.127.97:8085/loginç½‘å€!
+[2018-07-30 14:01:07,463] INFO  handler.LoginHandler ç‚¹å‡»ï¼š[[FirefoxDriver: firefox on ANY (1c6fbc34-384c-4b28-8266-4d84fd7d1380)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 14:01:13,509] INFO  utils.Assertion ã€AssertéªŒè¯ã€‘:é¡µé¢æ˜¯å¦å‡ºç°ã€é¢„æœŸå€¼ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒã€‘å­—ç¬¦ä¸²
+[2018-07-30 14:01:42,278] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 14:01:45,810] INFO  base.BaseDriver åˆå§‹åŒ–ç«ç‹æµè§ˆå™¨
+[2018-07-30 14:01:45,811] INFO  base.BaseDriver ------------------å¼€å§‹æ‰§è¡Œæµ‹è¯•---------------
+[2018-07-30 14:01:46,591] INFO  base.BaseDriver æ‰“å¼€æµè§ˆå™¨ï¼Œè®¿é—®http://144.7.127.97:8085/loginç½‘å€!
+[2018-07-30 14:01:46,937] INFO  handler.LoginHandler ç‚¹å‡»ï¼š[[FirefoxDriver: firefox on ANY (bee25fca-4f81-468a-ab8a-3a255151f3f7)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 14:01:49,229] INFO  utils.Assertion ã€AssertéªŒè¯ã€‘:é¡µé¢æ˜¯å¦å‡ºç°ã€é¢„æœŸå€¼ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒã€‘å­—ç¬¦ä¸²
+[2018-07-30 14:02:31,567] INFO  utils.Assertion é¡µé¢å‡ºç°ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒ
+[2018-07-30 14:02:43,972] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 14:02:47,362] INFO  base.BaseDriver åˆå§‹åŒ–ç«ç‹æµè§ˆå™¨
+[2018-07-30 14:02:47,363] INFO  base.BaseDriver ------------------å¼€å§‹æ‰§è¡Œæµ‹è¯•---------------
+[2018-07-30 14:02:48,184] INFO  base.BaseDriver æ‰“å¼€æµè§ˆå™¨ï¼Œè®¿é—®http://144.7.127.97:8085/loginç½‘å€!
+[2018-07-30 14:02:48,530] INFO  handler.LoginHandler ç‚¹å‡»ï¼š[[FirefoxDriver: firefox on ANY (c2e5ab3c-e6aa-41f6-87f1-e95e6e2c0917)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 14:03:58,464] INFO  utils.Assertion ã€AssertéªŒè¯ã€‘:é¡µé¢æ˜¯å¦å‡ºç°ã€é¢„æœŸå€¼ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒã€‘å­—ç¬¦ä¸²
+[2018-07-30 14:04:36,264] INFO  utils.Assertion é¡µé¢å‡ºç°ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒ
+[2018-07-30 14:23:01,489] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 14:23:04,891] INFO  base.BaseDriver åˆå§‹åŒ–ç«ç‹æµè§ˆå™¨
+[2018-07-30 14:23:04,891] INFO  base.BaseDriver ------------------å¼€å§‹æ‰§è¡Œæµ‹è¯•---------------
+[2018-07-30 14:23:05,733] INFO  base.BaseDriver æ‰“å¼€æµè§ˆå™¨ï¼Œè®¿é—®http://144.7.127.97:8085/loginç½‘å€!
+[2018-07-30 14:23:06,170] INFO  handler.LoginHandler ç‚¹å‡»ï¼š[[FirefoxDriver: firefox on ANY (1301797a-07bc-4f66-8030-af5afda0c4b6)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 14:23:06,170] INFO  utils.Assertion ã€AssertéªŒè¯ã€‘:é¡µé¢æ˜¯å¦å‡ºç°ã€é¢„æœŸå€¼ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒã€‘å­—ç¬¦ä¸²
+[2018-07-30 14:23:06,201] INFO  utils.Assertion é¡µé¢å‡ºç°ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒ
+[2018-07-30 14:23:06,951] INFO  base.BaseDriver å…³é—­æµè§ˆå™¨
+[2018-07-30 14:23:07,576] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 14:23:10,296] INFO  base.BaseDriver åˆå§‹åŒ–ç«ç‹æµè§ˆå™¨
+[2018-07-30 14:23:10,296] INFO  base.BaseDriver ------------------å¼€å§‹æ‰§è¡Œæµ‹è¯•---------------
+[2018-07-30 14:23:11,044] INFO  base.BaseDriver æ‰“å¼€æµè§ˆå™¨ï¼Œè®¿é—®http://144.7.127.97:8085/loginç½‘å€!
+[2018-07-30 14:23:11,356] INFO  handler.LoginHandler ç‚¹å‡»ï¼š[[FirefoxDriver: firefox on ANY (fd43f187-0f00-47b3-8d30-f7b7e0f16548)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 14:23:11,356] INFO  utils.Assertion ã€AssertéªŒè¯ã€‘:é¡µé¢æ˜¯å¦å‡ºç°ã€é¢„æœŸå€¼ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒã€‘å­—ç¬¦ä¸²
+[2018-07-30 14:23:11,388] INFO  utils.Assertion é¡µé¢å‡ºç°ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒ
+[2018-07-30 14:23:12,873] INFO  base.BaseDriver å…³é—­æµè§ˆå™¨
+[2018-07-30 14:23:13,278] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 14:23:15,887] INFO  base.BaseDriver åˆå§‹åŒ–ç«ç‹æµè§ˆå™¨
+[2018-07-30 14:23:15,887] INFO  base.BaseDriver ------------------å¼€å§‹æ‰§è¡Œæµ‹è¯•---------------
+[2018-07-30 14:23:16,699] INFO  base.BaseDriver æ‰“å¼€æµè§ˆå™¨ï¼Œè®¿é—®http://144.7.127.97:8085/loginç½‘å€!
+[2018-07-30 14:23:16,792] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (99ebd3d4-2bf2-4856-a588-529d653ee82b)] -> id: username]è¾“å…¥å€¼ï¼šexy0091
+[2018-07-30 14:23:17,057] INFO  handler.LoginHandler ç‚¹å‡»ï¼š[[FirefoxDriver: firefox on ANY (99ebd3d4-2bf2-4856-a588-529d653ee82b)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 14:23:17,057] INFO  utils.Assertion ã€AssertéªŒè¯ã€‘:é¡µé¢æ˜¯å¦å‡ºç°ã€é¢„æœŸå€¼ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒã€‘å­—ç¬¦ä¸²
+[2018-07-30 14:23:17,073] INFO  utils.Assertion é¡µé¢å‡ºç°ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒ
+[2018-07-30 14:23:17,978] INFO  base.BaseDriver å…³é—­æµè§ˆå™¨
+[2018-07-30 14:23:18,305] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 14:23:20,965] INFO  base.BaseDriver åˆå§‹åŒ–ç«ç‹æµè§ˆå™¨
+[2018-07-30 14:23:20,965] INFO  base.BaseDriver ------------------å¼€å§‹æ‰§è¡Œæµ‹è¯•---------------
+[2018-07-30 14:23:58,593] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 14:24:01,904] INFO  base.BaseDriver åˆå§‹åŒ–ç«ç‹æµè§ˆå™¨
+[2018-07-30 14:24:01,904] INFO  base.BaseDriver ------------------å¼€å§‹æ‰§è¡Œæµ‹è¯•---------------
+[2018-07-30 14:24:02,780] INFO  base.BaseDriver æ‰“å¼€æµè§ˆå™¨ï¼Œè®¿é—®http://144.7.127.97:8085/loginç½‘å€!
+[2018-07-30 14:24:02,936] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (1cd19067-541b-4c40-b58b-b0e29a0ab254)] -> id: username]è¾“å…¥å€¼ï¼šexy0088
+[2018-07-30 14:24:02,998] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (1cd19067-541b-4c40-b58b-b0e29a0ab254)] -> id: password]è¾“å…¥å€¼ï¼šhezhaowei0210!
+[2018-07-30 14:24:06,442] INFO  handler.LoginHandler ç‚¹å‡»ï¼š[[FirefoxDriver: firefox on ANY (1cd19067-541b-4c40-b58b-b0e29a0ab254)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 14:24:06,442] INFO  utils.Assertion ã€AssertéªŒè¯ã€‘:é¡µé¢æ˜¯å¦å‡ºç°ã€é¢„æœŸå€¼ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒã€‘å­—ç¬¦ä¸²
+[2018-07-30 14:24:06,463] INFO  utils.Assertion é¡µé¢å‡ºç°ï¼šé›„å®‰å¸‚æ°‘æœåŠ¡ä¸­å¿ƒ
+[2018-07-30 14:24:07,609] INFO  base.BaseDriver å…³é—­æµè§ˆå™¨
+[2018-07-30 14:33:31,031] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 14:33:40,794] INFO  base.BaseDriver è¯»å–æµè§ˆå™¨å¹¶å°†å…¶åˆå§‹åŒ–
+[2018-07-30 14:33:44,013] INFO  base.BaseDriver åˆå§‹åŒ–ç«ç‹æµè§ˆå™¨
+[2018-07-30 14:33:44,013] INFO  base.BaseDriver ------------------å¼€å§‹æ‰§è¡Œæµ‹è¯•---------------
+[2018-07-30 14:33:44,808] INFO  base.BaseDriver æ‰“å¼€æµè§ˆå™¨ï¼Œè®¿é—®http://144.7.127.97:8085/loginç½‘å€!
+[2018-07-30 14:33:44,964] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (525d8daf-172d-4254-83a0-934e048943bd)] -> id: username]è¾“å…¥å€¼ï¼šexy0088
+[2018-07-30 14:33:45,011] INFO  handler.LoginHandler Locator:[[FirefoxDriver: firefox on ANY (525d8daf-172d-4254-83a0-934e048943bd)] -> id: password]è¾“å…¥å€¼ï¼šhezhaowei0210!
+[2018-07-30 14:33:48,109] INFO  handler.LoginHandler ç‚¹å‡»ï¼š[[FirefoxDriver: firefox on ANY (525d8daf-172d-4254-83a0-934e048943bd)] -> xpath: /html/body/div/form/div[4]/button]
+[2018-07-30 14:33:48,110] INFO  utils.Assertion ã€AssertéªŒè¯ã€‘:é¡µé¢æ˜¯å¦å‡ºç°ã€é¢„æœŸå€¼ï¼šé¦–é¡µã€‘å­—ç¬¦ä¸²
+[2018-07-30 14:33:48,129] INFO  utils.Assertion é¡µé¢å‡ºç°ï¼šé¦–é¡µ
+[2018-07-30 14:33:49,280] INFO  base.BaseDriver å…³é—­æµè§ˆå™¨
