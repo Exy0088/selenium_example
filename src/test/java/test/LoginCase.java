@@ -93,7 +93,7 @@ public class LoginCase extends CaseBase{
     public void loginSuccess(LoginCaseData data)throws Exception{//需要一个LoginCaseData 这个实体类，获得Excel文件中的用户名、密码数据
         loginAction.login(data.getInputUsername(),data.getInputPassword());//调用loginaction业务类中login方法，
         //判断页面是否出现“雄安市民服务中心”文本，若出现则返回登录成功，若失败则返回登录失败字符
-        final String  message = asser.VerityNotTextPresent("雄安市民服务中心")? Message.LOGINSUCCESS: Message.LOGINFAIL;
+        final String  message = asser.VerityNotTextPresent("首页")? Message.LOGINSUCCESS: Message.LOGINFAIL;
         Reporter.log(data.toString());
         //调用Assert类中的方法，实际值与预期值进行比较
         Assert.assertEquals(message,data.getExpected());
@@ -106,7 +106,7 @@ public class LoginCase extends CaseBase{
     @Test(description = "登录失败用例", dataProvider = "longinData")
     public void loginFail(LoginCaseData data)throws Exception{
         loginAction.login(data.getInputUsername(),data.getInputPassword());
-        final String  message = asser.VerityNotTextPresent("雄安市民服务中心")? Message.LOGINFAIL: Message.LOGINSUCCESS;
+        final String  message = asser.VerityNotTextPresent("首页")? Message.LOGINFAIL: null;
         Reporter.log(data.toString());
         Assert.assertEquals(message,data.getExpected());
     }
