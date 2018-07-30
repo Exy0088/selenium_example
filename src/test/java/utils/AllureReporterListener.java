@@ -1,11 +1,11 @@
 package utils;
 
+import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.IHookCallBack;
 import org.testng.IHookable;
 import org.testng.ITestResult;
-import ru.yandex.qatools.allure.annotations.Attachment;
 import test.CaseBase;
 
 import java.io.IOException;
