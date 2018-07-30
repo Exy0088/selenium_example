@@ -13,16 +13,16 @@
             </class>
         </classes>
     </test>
-    <!--<test verbose="2" preserve-order="true" name="登录失败Case">-->
-        <!--<classes>-->
-            <!--<class name="test.LoginCase">-->
-                <!--<methods>-->
-                    <!--&lt;!&ndash;<include name="loginSuccess"/>&ndash;&gt;-->
-                    <!--<include name="loginFail"/>-->
-                <!--</methods>-->
-            <!--</class>-->
-        <!--</classes>-->
-    <!--</test>-->
+    <test verbose="2" preserve-order="true" name="登录失败Case">
+        <classes>
+            <class name="test.LoginCase">
+                <methods>
+                    <!--<include name="loginSuccess"/>-->
+                    <include name="loginFail"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
     <listeners>
         <listener class-name="utils.ExtentTestNGIReporterListener"/>
     </listeners>
