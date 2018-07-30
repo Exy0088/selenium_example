@@ -1,5 +1,7 @@
 package utils;
 
+import base.GlobalConfig;
+
 import java.io.*;
 import java.util.Enumeration;
 import java.util.Map;
@@ -34,7 +36,7 @@ public class PropertiesUtil {
     private static Properties readProperties(){
 
         props = new Properties();
-        String[] filePath = {"src\\test\\resources\\properties\\global.properties","src\\test\\resources\\properties\\consult.properties"};
+        String[] filePath = {GlobalConfig.GLOBALPRO,GlobalConfig.SESSIONPRO};
         if(filePath == null ){
             System.out.println("文件路径不能为空");
         }else {

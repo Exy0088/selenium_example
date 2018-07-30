@@ -111,7 +111,7 @@ public class BaseDriver {
         for(Cookie c :cookies){
             if(c.getName().equals("SESSION")){
 
-                PropertiesUtil.writePops("src\\test\\resources\\properties\\global.properties",c.getName(),c.getValue());
+                PropertiesUtil.writePops(c.getName(),c.getValue());
             }
         }
     }
