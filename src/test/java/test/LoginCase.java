@@ -47,7 +47,7 @@ public class LoginCase extends CaseBase{
         eu = new ExcelUtils(filePath,caseSheet);
         try {
             //调用ExcelUtils中的获得行的方法，需要传入用例名称、列号
-            List<Integer> rowNum = eu.getRowNum(method.getName(),ExcelUtils.TestcaseField.TestCaseName);
+            List<Integer> rowNum = eu.getRowNum(method.getName(),ExcelUtils.TestcaseField.TestCaseType);
             //根据行去读取数据，需要传入行号、工作表字段对应的实体类，将获得数据放到泛型类型为映射的实体类中
             List< List<LoginCaseData>> caseDatas = eu.readExcel(rowNum,LoginCaseData.class);
             //循环遍历集合
@@ -96,7 +96,6 @@ public class LoginCase extends CaseBase{
         final String  message = asser.VerityNotTextPresent("雄安市民服务中心")? Message.LOGINSUCCESS: Message.LOGINFAIL;
         //调用Assert类中的方法，实际值与预期值进行比较
         Assert.assertEquals(message,data.getExpected());
-        Reporter.log("dddddddddddddddd");
     }
 
     /**

@@ -10,7 +10,7 @@ public class LoginCaseData {
 
     private String ID;//用例ID
     private String TestSuite;//测试集
-    private String TestCaseID;//测试用例编号
+    private String TestCaseType;//测试用例类型
     private String TestCaseName;//测试用例名称
     private String InputUsername;//输入用户名
     private String InputPassword;//输入密码
@@ -34,12 +34,12 @@ public class LoginCaseData {
         TestSuite = testSuite;
     }
 
-    public String getTestCaseID() {
-        return TestCaseID;
+    public String getTestCaseType() {
+        return TestCaseType;
     }
 
-    public void setTestCaseID(String testCaseID) {
-        TestCaseID = testCaseID;
+    public void setTestCaseType(String testCaseType) {
+        TestCaseType = testCaseType;
     }
 
     public String getTestCaseName() {
@@ -95,7 +95,7 @@ public class LoginCaseData {
         return "CaseData{" +
                 "ID='" + ID + '\'' +
                 ", TestSuite='" + TestSuite + '\'' +
-                ", TestCaseID='" + TestCaseID + '\'' +
+                ", TestCaseID='" + TestCaseType + '\'' +
                 ", TestCaseName='" + TestCaseName + '\'' +
                 ", InputUsername='" + InputUsername + '\'' +
                 ", InputPassword='" + InputPassword + '\'' +

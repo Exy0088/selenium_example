@@ -91,8 +91,6 @@
             <artifactId>hutool-all</artifactId>
             <version>4.1.2</version>
         </dependency>
-
-
         <dependency>
             <groupId>com.relevantcodes</groupId>
             <artifactId>extentreports</artifactId>
@@ -124,65 +122,6 @@
 
 
     <!-- 添加插件,关联testng.xml -->
-    <!--<build>-->
-        <!--<plugins>-->
-            <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-compiler-plugin</artifactId>-->
-                <!--<version>3.0</version>-->
-                <!--<configuration>-->
-                    <!--<encoding>UTF-8</encoding>-->
-                    <!--<source>1.8</source>-->
-                    <!--<target>1.8</target>-->
-                <!--</configuration>-->
-            <!--</plugin>-->
-            <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-surefire-plugin</artifactId>-->
-                <!--<version>2.20</version>-->
-                <!--<configuration>-->
-                    <!--<suiteXmlFiles>-->
-                        <!--<suiteXmlFile>${xmlFileName}</suiteXmlFile>-->
-                    <!--</suiteXmlFiles>-->
-                    <!--<systemPropertyVariables>-->
-                        <!--<testEnvironment>${testBrowser}</testEnvironment>-->
-                    <!--</systemPropertyVariables>-->
-                    <!--<testFailureIgnore>true</testFailureIgnore>-->
-                    <!--<argLine>-->
-                        <!-- -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar-->
-                    <!--</argLine>-->
-                    <!--<systemProperties>-->
-                        <!--<property>-->
-                            <!--<name>allure.results.directory</name>-->
-                            <!--<value>${allure.results.directory}</value>-->
-                        <!--</property>-->
-                    <!--</systemProperties>-->
-                    <!--&lt;!&ndash; 使用reportng美化testng报告的相关配置，即关闭默认监听，开启两个reportng的监听 &ndash;&gt;-->
-                   <!--<properties>-->
-                        <!--<property>-->
-                        <!--<name>usedefaultlisteners</name>-->
-                        <!--<value>false</value>-->
-                        <!--</property>-->
-                        <!--<property>-->
-                            <!--<name>listener</name>-->
-                            <!--<value>ru.yandex.qatools.allure.testng.AllureTestListener</value>-->
-                            <!--&lt;!&ndash;<name>listener</name>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>&ndash;&gt;-->
-                        <!--</property>-->
-                    <!--</properties>-->
-                    <!--&lt;!&ndash;<workingDirectory>target/</workingDirectory>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<forkMode>always</forkMode>&ndash;&gt;-->
-                <!--</configuration>-->
-                <!--<dependencies>-->
-                    <!--<dependency>-->
-                        <!--<groupId>org.aspectj</groupId>-->
-                        <!--<artifactId>aspectjweaver</artifactId>-->
-                        <!--<version>${aspectj.version}</version>-->
-                    <!--</dependency>-->
-                <!--</dependencies>-->
-            <!--</plugin>-->
-        <!--</plugins>-->
-    <!--</build>-->
     <build>
         <plugins>
             <plugin>
@@ -198,7 +137,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.18.1</version>
+                <version>2.20</version>
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>${xmlFileName}</suiteXmlFile>
@@ -207,50 +146,93 @@
                         <testEnvironment>${testBrowser}</testEnvironment>
                     </systemPropertyVariables>
                     <testFailureIgnore>true</testFailureIgnore>
-                    <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                    </argLine>
-                    <properties>
+                    <!-- 使用reportng美化testng报告的相关配置，即关闭默认监听，开启两个reportng的监听 -->
+                   <properties>
                         <property>
-                            <name>usedefaultlisteners</name>
-                            <value>false</value>
+                        <name>usedefaultlisteners</name>
+                        <value>false</value>
                         </property>
                         <property>
                             <name>listener</name>
-                            <value>ru.yandex.qatools.allure.testng.AllureTestListener</value>
+                            <value>utils.ExtentTestNGIReporterListener</value>
                             <!--<name>listener</name>-->
                             <!--<value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>-->
                         </property>
                     </properties>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.aspectj</groupId>
-                        <artifactId>aspectjweaver</artifactId>
-                        <version>${aspectj.version}</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-            <plugin>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-maven-plugin</artifactId>
-                <version>9.2.10.v20150310</version>
-                <configuration>
-                    <webAppSourceDirectory>${project.build.directory}/site/allure-maven-plugin</webAppSourceDirectory>
-                    <stopKey>stop</stopKey>
-                    <stopPort>1234</stopPort>
+                    <!--<workingDirectory>target/</workingDirectory>-->
+                    <!--<forkMode>always</forkMode>-->
                 </configuration>
             </plugin>
         </plugins>
     </build>
-    <reporting>
-        <excludeDefaults>true</excludeDefaults>
-        <plugins>
-            <plugin>
-                <groupId>ru.yandex.qatools.allure</groupId>
-                <artifactId>allure-maven-plugin</artifactId>
-                <version>2.2</version>
-            </plugin>
-        </plugins>
-    </reporting>
+    <!--<build>-->
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-compiler-plugin</artifactId>-->
+                <!--<version>3.0</version>-->
+                <!--<configuration>-->
+                    <!--<encoding>UTF-8</encoding>-->
+                    <!--<source>1.8</source>-->
+                    <!--<target>1.8</target>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-surefire-plugin</artifactId>-->
+                <!--<version>2.18.1</version>-->
+                <!--<configuration>-->
+                    <!--<suiteXmlFiles>-->
+                        <!--<suiteXmlFile>${xmlFileName}</suiteXmlFile>-->
+                    <!--</suiteXmlFiles>-->
+                    <!--<systemPropertyVariables>-->
+                        <!--<testEnvironment>${testBrowser}</testEnvironment>-->
+                    <!--</systemPropertyVariables>-->
+                    <!--<testFailureIgnore>true</testFailureIgnore>-->
+                    <!--<argLine>-->
+                        <!-- -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"-->
+                    <!--</argLine>-->
+                    <!--<properties>-->
+                        <!--<property>-->
+                            <!--<name>usedefaultlisteners</name>-->
+                            <!--<value>false</value>-->
+                        <!--</property>-->
+                        <!--<property>-->
+                            <!--<name>listener</name>-->
+                            <!--<value>ru.yandex.qatools.allure.testng.AllureTestListener</value>-->
+                            <!--&lt;!&ndash;<name>listener</name>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>&ndash;&gt;-->
+                        <!--</property>-->
+                    <!--</properties>-->
+                <!--</configuration>-->
+                <!--<dependencies>-->
+                    <!--<dependency>-->
+                        <!--<groupId>org.aspectj</groupId>-->
+                        <!--<artifactId>aspectjweaver</artifactId>-->
+                        <!--<version>${aspectj.version}</version>-->
+                    <!--</dependency>-->
+                <!--</dependencies>-->
+            <!--</plugin>-->
+            <!--<plugin>-->
+                <!--<groupId>org.eclipse.jetty</groupId>-->
+                <!--<artifactId>jetty-maven-plugin</artifactId>-->
+                <!--<version>9.2.10.v20150310</version>-->
+                <!--<configuration>-->
+                    <!--<webAppSourceDirectory>${project.build.directory}/site/allure-maven-plugin</webAppSourceDirectory>-->
+                    <!--<stopKey>stop</stopKey>-->
+                    <!--<stopPort>1234</stopPort>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+        <!--</plugins>-->
+    <!--</build>-->
+    <!--<reporting>-->
+        <!--<excludeDefaults>true</excludeDefaults>-->
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>ru.yandex.qatools.allure</groupId>-->
+                <!--<artifactId>allure-maven-plugin</artifactId>-->
+                <!--<version>2.2</version>-->
+            <!--</plugin>-->
+        <!--</plugins>-->
+    <!--</reporting>-->
 </project>

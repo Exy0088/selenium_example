@@ -56,7 +56,7 @@ public class ExcelUtils {
     public static interface TestcaseField{
         int caseID = 0;
         int TestSuite = 1;
-        int TestCaseID = 2;
+        int TestCaseType = 2;
         int TestCaseName = 3;
     }
 
