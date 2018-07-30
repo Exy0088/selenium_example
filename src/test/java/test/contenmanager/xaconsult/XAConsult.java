@@ -30,9 +30,9 @@ public class XAConsult extends CaseBase{
     public BaseDriver driver;
     private LoginCase loginCase;
 
-    public BaseDriver getDriver() {
-        return driver;
-    }
+//    public BaseDriver getDriver() {
+//        return driver;
+//    }
 
     @BeforeMethod
     public void setUp(){

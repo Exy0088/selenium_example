@@ -10,14 +10,21 @@ import utils.log.Log;
   * @author hezhaowei
   * @create 2018-07-15 12:57
   **/
-@Listeners(utils.screenshot.ScreenshotListener.class)
+@Listeners(utils.AllureReporterListener.class)
 public class CaseBase {
 
     private Log log = new Log(this.getClass());
-    private BaseDriver driver;
+    private static BaseDriver driver;
 
-    public BaseDriver getDriver() {
+
+
+
+    public static BaseDriver getDriver() {
         return driver;
+    }
+
+    public static BaseDriver getWebDriver() {
+        return  getDriver();
     }
 
     public void setDriver(String driver) {
