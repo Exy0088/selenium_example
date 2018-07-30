@@ -10,7 +10,7 @@ import utils.log.Log;
   * @author hezhaowei
   * @create 2018-07-15 12:57
   **/
-@Listeners(utils.AllureReporterListener.class)
+@Listeners(utils.screenshot.ScreenshotListener.class)
 public class CaseBase {
 
     private Log log = new Log(this.getClass());
