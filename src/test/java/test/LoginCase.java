@@ -106,7 +106,7 @@ public class LoginCase extends CaseBase{
     @Test(description = "登录失败用例", dataProvider = "longinData")
     public void loginFail(LoginCaseData data)throws Exception{
         loginAction.login(data.getInputUsername(),data.getInputPassword());
-        final String  message = asser.VerityNotTextPresent("首页")? Message.LOGINFAIL: null;
+        final String  message = asser.VerityNotTextPresent("首页")? Message.LOGINSUCCESS: Message.LOGINFAIL;
         Reporter.log(data.toString());
         Assert.assertEquals(message,data.getExpected());
     }
