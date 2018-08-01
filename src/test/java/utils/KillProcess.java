@@ -1,6 +1,6 @@
 package utils;
 
-import base.BrowserType;
+import base.driver.BrowserType;
 
 import java.io.BufferedReader;
 import java.io.IOException;

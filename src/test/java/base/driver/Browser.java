@@ -1,6 +1,5 @@
-package base;
+package base.driver;
 
-import base.BrowserType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -13,6 +12,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
   * @create 2018-07-15 12:51
   **/
 public class Browser {
+
     private WebDriver driver;
     private DesiredCapabilities dc;
     private String projectPath = System.getProperty("user.dir");

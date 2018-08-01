@@ -1,6 +1,6 @@
 package action.contentmanager.xaconsult;
 
-import base.BaseDriver;
+import base.driver.BaseDriver;
 import handler.LoginHandler;
 import handler.contentmanager.XAConsultHandler;
 import utils.PropertiesUtil;
@@ -23,28 +23,15 @@ public class XAConsultAction {
         this.baseDriver = driver;
     }
 
-    public void searchConsult(String content){
-        if( content == null){
-            xh.clickContentmanagerMemu();
-            xh.clickXAconsultMemu();
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+    public void queryConsult(String content){
+
+//            xh.clickContentmanagerMemu();
+//            xh.clickXAconsultMemu();
             xh.sendKeysTitleInput(content);
             xh.clickSearchButton();
-        }else {
-            xh.clickContentmanagerMemu();
-            xh.clickXAconsultMemu();
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            baseDriver.swithFrame(1);
-            xh.sendKeysTitleInput(content);
-            xh.clickSearchButton();
-        }
+
+    }
+    public Integer getsize() {
+        return xh.getConsultSize();
     }
 }

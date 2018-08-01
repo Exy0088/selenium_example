@@ -1,6 +1,6 @@
 package page.contentmanager;
 
-import base.BaseDriver;
+import base.driver.BaseDriver;
 import org.openqa.selenium.WebElement;
 import utils.Locator;
 import utils.log.Log;

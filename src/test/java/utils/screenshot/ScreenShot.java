@@ -1,6 +1,6 @@
 package utils.screenshot;
 
-import base.BaseDriver;
+import base.driver.BaseDriver;
 import com.google.common.io.Files;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -40,7 +40,7 @@ public class ScreenShot {
             new File("test-output\\screenshot\\"+screenshotFile).mkdirs();
         }
         final String screenPath = new File("test-output\\screenshot\\"+screenshotFile).getAbsoluteFile() + "\\"+screenName;
-        File file = ((TakesScreenshot) BaseDriver.driver).getScreenshotAs(OutputType.FILE);
+        File file = ((TakesScreenshot) driver.getDriver()).getScreenshotAs(OutputType.FILE);
         try {
             Files.copy(file,new File(screenPath));
             log.error("错误截图");

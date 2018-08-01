@@ -36,7 +36,7 @@ public class PropertiesUtil {
     private static Properties readProperties(){
 
         props = new Properties();
-        String[] filePath = {GlobalConfig.GLOBALPRO,GlobalConfig.SESSIONPRO};
+        String[] filePath = {"src\\test\\resources\\properties\\global.properties"};
         if(filePath == null ){
             System.out.println("文件路径不能为空");
         }else {
@@ -157,7 +157,7 @@ public class PropertiesUtil {
         //getPro("WAITTIME");
 
         //writePops("src\\\\test\\\\resources\\\\properties\\\\global.properties","ss","dd");
-        String searchcontent = getPro("SEARCHCONTENT");
+        String searchcontent = getPro("SESSION");
         System.out.println(searchcontent);
     }
 }

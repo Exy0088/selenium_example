@@ -14,5 +14,5 @@ search_button:
   type: "xpath"
   value: "/html/body/div/div/div/div/div[2]/div/div/div[1]/div[2]/button"
 table_tr:
-  type: "className"
-  value: "bootstrap-table"
+  type: "id"
+  value: "XaobNewsReleaseTable"

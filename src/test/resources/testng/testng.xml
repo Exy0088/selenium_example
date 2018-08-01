@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="自动化登录测试">
+<suite name="雄安运营UI自动化测试">
     <parameter name="${testBrowser}" value="${testBrowser}"/>
     <test verbose="2" preserve-order="true" name="登录成功Case">
         <classes>
@@ -19,6 +19,16 @@
                 <methods>
                     <!--<include name="loginSuccess"/>-->
                     <include name="loginFail"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="雄安资讯检索Case">
+        <classes>
+            <class name="test.contenmanager.xaconsult.XAConsultCase">
+                <methods>
+                    <!--<include name="loginSuccess"/>-->
+                    <include name="query"/>
                 </methods>
             </class>
         </classes>

@@ -1,7 +1,7 @@
 package test;
 
-import base.BaseDriver;
-import base.BrowserType;
+import base.driver.BaseDriver;
+import base.driver.BrowserType;
 import org.testng.annotations.*;
 import utils.log.Log;
 
@@ -14,30 +14,28 @@ import utils.log.Log;
 public class CaseBase {
 
     private Log log = new Log(this.getClass());
-    private static BaseDriver driver;
+    private  BaseDriver driver;
 
-
-
-
-    public static BaseDriver getDriver() {
+    public  BaseDriver getDriver() {
         return driver;
     }
 
-    public static BaseDriver getWebDriver() {
-        return  getDriver();
-    }
+    @Parameters({"testBrowser"})
+    @BeforeMethod
+    public void initDriver(@Optional("firefox") String browserType){
 
-    public void setDriver(String driver) {
-        this.driver = initDriver(driver);
-    }
-
-    private BaseDriver initDriver(String browserType){
-        if(browserType.equalsIgnoreCase("IE") || browserType.equalsIgnoreCase("InternetExplorer")){
-            return new BaseDriver(BrowserType.IE);
-        }else if(browserType.equalsIgnoreCase("ff") || browserType.equalsIgnoreCase("FIREFOX")){
-            return new BaseDriver(BrowserType.FIREFOX);
-        }else{
-            return new BaseDriver(BrowserType.CHROME);
+        try {
+            if(browserType.equalsIgnoreCase("IE") || browserType.equalsIgnoreCase("InternetExplorer")){
+                driver =  new BaseDriver(BrowserType.IE);
+            }else if(browserType.equalsIgnoreCase("ff") || browserType.equalsIgnoreCase("FIREFOX")){
+                driver =  new BaseDriver(BrowserType.FIREFOX);
+            }else{
+                driver =  new BaseDriver(BrowserType.CHROME);
+            }
+            log.info("------------------开始执行测试---------------");
+        } catch (Exception e) {
+            log.error("没有成功浏览器环境配置错误");
+            e.printStackTrace();
         }
     }
 

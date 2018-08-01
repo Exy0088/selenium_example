@@ -34,7 +34,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
 		<!-- report name -->
@@ -47,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>2018-07-30 : 14:33:44</span>
+                    <span class='label suite-start-time blue darken-3'>2018-08-01 : 12:09:29</span>
 				</a>
 			</li>
 			<li>
@@ -80,6 +81,19 @@
 			<!-- test toggle -->
 
 			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>自动化登录测试</a></li>
+					<li><a href='#'>登录成功Case</a></li>
+					<li><a href='#'>登录失败Case</a></li>
+					<li><a href='#'>雄安资讯检索Case</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
 			<!-- category toggle -->
 
 			<!-- clear filters -->
@@ -123,7 +137,7 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -138,7 +152,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -156,41 +170,302 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>test.LoginCase.loginSuccess[CaseData{ID='1', TestSuite='登录...}]</span>
-						<span class='test-time'>2018-07-30 : 14:33:44</span>
+						<span class='test-name'>自动化登录测试 : 登录成功Case</span>
+						<span class='test-time'>2018-08-01 : 12:09:29</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>2018-07-30 : 14:33:44</span>
-	<span class='label end-time'>2018-07-30 : 14:33:48</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+323ms</span>
+	<span class='label start-time'>2018-08-01 : 12:09:29</span>
+	<span class='label end-time'>2018-08-01 : 12:09:41</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+80ms</span>
 </div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:33:49 PM</td>
-					<td class='step-details'>CaseData{ID='1', TestSuite='登录', TestCaseID='loginSuccess', TestCaseName='正确的用户名和密码', InputUsername='exy0088', InputPassword='hezhaowei0210!', Expected='登录成功', TestExecuteTime='', TestResult=''}</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>2:33:49 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
+	<div class='test-desc'>Pass: 1 ; Fail: 0 ; Skip: 0 ; </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>自动化登录测试</span>
+				<span class='category label white-text'>登录成功Case</span>
+			</div>
 	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='2'>
+					<div class='collapsible-header'>
+						<div class='node-name'>test.LoginCase.loginSuccess[CaseData{ID='1', TestSuite='登录...}]</div>						
+						<span class='node-time'>2018-08-01 : 12:09:34</span>
+						<span class='node-duration'>0h 0m 52s+288ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>自动化登录测试</span>
+											<span class='category label white-text'>登录成功Case</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>12:10:27 PM</td>
+													<td class='step-details'>CaseData{ID='1', TestSuite='登录', TestCaseID='loginSuccess', TestCaseName='正确的用户名和密码', InputUsername='exy0088', InputPassword='hezhaowei0210!', Expected='登录成功', TestExecuteTime='', TestResult=''}</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:10:27 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>自动化登录测试 : 登录失败Case</span>
+						<span class='test-time'>2018-08-01 : 12:09:41</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>2018-08-01 : 12:09:41</span>
+	<span class='label end-time'>2018-08-01 : 12:09:56</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+977ms</span>
+</div>
+	<div class='test-desc'>Pass: 2 ; Fail: 0 ; Skip: 0 ; </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>自动化登录测试</span>
+				<span class='category label white-text'>登录失败Case</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='4'>
+					<div class='collapsible-header'>
+						<div class='node-name'>test.LoginCase.loginFail[CaseData{ID='2', TestSuite='登录...}]</div>						
+						<span class='node-time'>2018-08-01 : 12:09:45</span>
+						<span class='node-duration'>0h 0m 41s+689ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>自动化登录测试</span>
+											<span class='category label white-text'>登录失败Case</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>12:10:27 PM</td>
+													<td class='step-details'>CaseData{ID='2', TestSuite='登录', TestCaseID='loginFail', TestCaseName='用户名密码为空', InputUsername='', InputPassword='', Expected='登录失败', TestExecuteTime='', TestResult=''}</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:10:27 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='5'>
+					<div class='collapsible-header'>
+						<div class='node-name'>test.LoginCase.loginFail[CaseData{ID='3', TestSuite='登录...}]</div>						
+						<span class='node-time'>2018-08-01 : 12:09:52</span>
+						<span class='node-duration'>0h 0m 34s+220ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>自动化登录测试</span>
+											<span class='category label white-text'>登录失败Case</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>12:10:27 PM</td>
+													<td class='step-details'>CaseData{ID='3', TestSuite='登录', TestCaseID='loginFail', TestCaseName='用户名密码为空', InputUsername='', InputPassword='', Expected='登录失败', TestExecuteTime='', TestResult=''}</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:10:27 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>自动化登录测试 : 雄安资讯检索Case</span>
+						<span class='test-time'>2018-08-01 : 12:09:56</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>2018-08-01 : 12:09:56</span>
+	<span class='label end-time'>2018-08-01 : 12:10:26</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+679ms</span>
+</div>
+	<div class='test-desc'>Pass: 3 ; Fail: 0 ; Skip: 0 ; </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>自动化登录测试</span>
+				<span class='category label white-text'>雄安资讯检索Case</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='7'>
+					<div class='collapsible-header'>
+						<div class='node-name'>test.contenmanager.xaconsult.XAConsultCase.query[XAConsultCaseData{ID='1', Test...}]</div>						
+						<span class='node-time'>2018-08-01 : 12:10:04</span>
+						<span class='node-duration'>0h 0m 22s+285ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>自动化登录测试</span>
+											<span class='category label white-text'>雄安资讯检索Case</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>12:10:27 PM</td>
+													<td class='step-details'>XAConsultCaseData{ID='1', TestSuite='雄安资讯', TestCaseType='query', TestCaseName='直接点击搜索', TitleName='', Expected='展示已有的全部数据，总共279条', TestExecuteTime='', TestResult=''}</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:10:27 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='8'>
+					<div class='collapsible-header'>
+						<div class='node-name'>test.contenmanager.xaconsult.XAConsultCase.query[XAConsultCaseData{ID='2', Test...}]</div>						
+						<span class='node-time'>2018-08-01 : 12:10:14</span>
+						<span class='node-duration'>0h 0m 12s+421ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>自动化登录测试</span>
+											<span class='category label white-text'>雄安资讯检索Case</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>12:10:27 PM</td>
+													<td class='step-details'>XAConsultCaseData{ID='2', TestSuite='雄安资讯', TestCaseType='query', TestCaseName='输入标题部分', TitleName='雄安', Expected='有196条', TestExecuteTime='', TestResult=''}</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:10:27 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='9'>
+					<div class='collapsible-header'>
+						<div class='node-name'>test.contenmanager.xaconsult.XAConsultCase.query[XAConsultCaseData{ID='3', Test...}]</div>						
+						<span class='node-time'>2018-08-01 : 12:10:25</span>
+						<span class='node-duration'>0h 0m 1s+755ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>自动化登录测试</span>
+											<span class='category label white-text'>雄安资讯检索Case</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>12:10:27 PM</td>
+													<td class='step-details'>XAConsultCaseData{ID='3', TestSuite='雄安资讯', TestCaseType='query', TestCaseName='输入完整标题', TitleName='苗圩赴河北雄安新区调研并签署部省合作协议', Expected='列表只展示该标题,1条', TestExecuteTime='', TestResult=''}</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:10:27 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
 					</div>
 				</li>
 			</ul>
@@ -218,6 +493,248 @@
 
 </div>
 <!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>自动化登录测试</span>
+						<span class='category-status right'>
+							<span class='label pass'>9</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 9</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2018-08-01 : 12:09:29</td>
+										<td class='linked' test-id='1'>登录成功Case</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>2018-08-01 : 12:09:34</td>
+										<td class='linked' test-id='2'>登录成功Case.test.LoginCase.loginSuccess[CaseData{ID='1', TestSuite='登录...}]</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>2018-08-01 : 12:09:41</td>
+										<td class='linked' test-id='3'>登录失败Case</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>2018-08-01 : 12:09:45</td>
+										<td class='linked' test-id='4'>登录失败Case.test.LoginCase.loginFail[CaseData{ID='2', TestSuite='登录...}]</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>2018-08-01 : 12:09:52</td>
+										<td class='linked' test-id='5'>登录失败Case.test.LoginCase.loginFail[CaseData{ID='3', TestSuite='登录...}]</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>2018-08-01 : 12:09:56</td>
+										<td class='linked' test-id='6'>雄安资讯检索Case</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>2018-08-01 : 12:10:04</td>
+										<td class='linked' test-id='7'>雄安资讯检索Case.test.contenmanager.xaconsult.XAConsultCase.query[XAConsultCaseData{ID='1', Test...}]</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>2018-08-01 : 12:10:14</td>
+										<td class='linked' test-id='8'>雄安资讯检索Case.test.contenmanager.xaconsult.XAConsultCase.query[XAConsultCaseData{ID='2', Test...}]</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>2018-08-01 : 12:10:25</td>
+										<td class='linked' test-id='9'>雄安资讯检索Case.test.contenmanager.xaconsult.XAConsultCase.query[XAConsultCaseData{ID='3', Test...}]</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>登录成功Case</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2018-08-01 : 12:09:29</td>
+										<td class='linked' test-id='1'>登录成功Case</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>2018-08-01 : 12:09:34</td>
+										<td class='linked' test-id='2'>登录成功Case.test.LoginCase.loginSuccess[CaseData{ID='1', TestSuite='登录...}]</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>登录失败Case</span>
+						<span class='category-status right'>
+							<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2018-08-01 : 12:09:41</td>
+										<td class='linked' test-id='3'>登录失败Case</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>2018-08-01 : 12:09:45</td>
+										<td class='linked' test-id='4'>登录失败Case.test.LoginCase.loginFail[CaseData{ID='2', TestSuite='登录...}]</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>2018-08-01 : 12:09:52</td>
+										<td class='linked' test-id='5'>登录失败Case.test.LoginCase.loginFail[CaseData{ID='3', TestSuite='登录...}]</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>雄安资讯检索Case</span>
+						<span class='category-status right'>
+							<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2018-08-01 : 12:09:56</td>
+										<td class='linked' test-id='6'>雄安资讯检索Case</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>2018-08-01 : 12:10:04</td>
+										<td class='linked' test-id='7'>雄安资讯检索Case.test.contenmanager.xaconsult.XAConsultCase.query[XAConsultCaseData{ID='1', Test...}]</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>2018-08-01 : 12:10:14</td>
+										<td class='linked' test-id='8'>雄安资讯检索Case.test.contenmanager.xaconsult.XAConsultCase.query[XAConsultCaseData{ID='2', Test...}]</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>2018-08-01 : 12:10:25</td>
+										<td class='linked' test-id='9'>雄安资讯检索Case.test.contenmanager.xaconsult.XAConsultCase.query[XAConsultCaseData{ID='3', Test...}]</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
 <!-- category view -->
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
@@ -228,31 +745,69 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>2018-07-30 : 14:33:44</div>
+					<div class='panel-lead'>2018-08-01 : 12:09:29</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>2018-07-30 : 14:33:48</div>
+			 		<div class='panel-lead'>2018-08-01 : 12:09:41</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>3,323ms</div>
+					<div class='panel-lead'>12,080ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+						</tr>
+						<tr>
+							<td>自动化登录测试</td>
+							<td>9</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>登录成功Case</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>登录失败Case</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>雄安资讯检索Case</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>
@@ -265,7 +820,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
+				passParent: 6,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -273,14 +828,14 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 1,
+				passChild: 6,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 6,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

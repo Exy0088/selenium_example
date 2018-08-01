@@ -1,6 +1,6 @@
 package page;
 
-import base.BaseDriver;
+import base.driver.BaseDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utils.Locator;

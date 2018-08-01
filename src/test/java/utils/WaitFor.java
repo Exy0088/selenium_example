@@ -1,6 +1,7 @@
 package utils;
 
-import base.BaseDriver;
+import base.GlobalConfig;
+import base.driver.BaseDriver;
 import com.sun.jna.platform.win32.WinDef;
 import org.openqa.selenium.*;
 import org.openqa.selenium.NoSuchElementException;
@@ -24,7 +25,7 @@ public class WaitFor {
 
     public WaitFor(BaseDriver driver) {
        this.driver = driver;
-       this.waitTime = Long.parseLong(PropertiesUtil.getPro("WAITTIME"));
+       this.waitTime = Long.parseLong(GlobalConfig.getKeyValue("WAITTIME"));
 
     }
 
@@ -33,7 +34,7 @@ public class WaitFor {
      * @param locator
      */
    public boolean elementToBeClickable(By locator){
-       WebElement element = new WebDriverWait(BaseDriver.driver, waitTime).until(ExpectedConditions.elementToBeClickable(locator));
+       WebElement element = new WebDriverWait(driver.getDriver(), waitTime).until(ExpectedConditions.elementToBeClickable(locator));
        if(element.isEnabled()){
            return true;
        }
@@ -48,7 +49,7 @@ public class WaitFor {
     public boolean elementToBeSelected(WebElement element){
        boolean flag = false;
        if(element != null){
-           flag = new WebDriverWait(BaseDriver.driver, waitTime).until(ExpectedConditions.elementToBeSelected(element));
+           flag = new WebDriverWait(driver.getDriver(), waitTime).until(ExpectedConditions.elementToBeSelected(element));
            if(flag){
                flag = true;
            }
@@ -65,11 +66,11 @@ public class WaitFor {
         boolean flag = false;
         if (locator != null ){
             try{
-                WebDriverWait driverWait = new WebDriverWait(BaseDriver.driver, waitTime);
+                WebDriverWait driverWait = new WebDriverWait(driver.getDriver(), waitTime);
                 final WebElement until = driverWait.until(ExpectedConditions.presenceOfElementLocated(locator));
                 return  flag = true;
             }catch (TimeoutException e){
-                throw new NoSuchElementException(" 等待 " + waitTime+"秒，没有定位到"+locator.toString());
+                throw new NoSuchElementException("等待"+waitTime+"秒，没有定位到"+locator.toString());
             }
         }else {
             throw new IllegalArgumentException("Cannot find elements when the selector is null");
@@ -85,7 +86,7 @@ public class WaitFor {
     public boolean textToBePresentInElement(By locator,String value){
         boolean flag = false;
         if (locator != null ){
-            flag = new WebDriverWait(BaseDriver.driver, waitTime).until(ExpectedConditions.textToBePresentInElementValue(locator, value));
+            flag = new WebDriverWait(driver.getDriver(), waitTime).until(ExpectedConditions.textToBePresentInElementValue(locator, value));
            if(flag){
                flag = true;
            }
@@ -101,7 +102,7 @@ public class WaitFor {
    public boolean titleContains(String title){
        boolean flag = false;
        if (title != null ){
-           flag = new WebDriverWait(BaseDriver.driver, waitTime).until(ExpectedConditions.titleContains(title));
+           flag = new WebDriverWait(driver.getDriver(), waitTime).until(ExpectedConditions.titleContains(title));
            if(flag){
                flag = true;
            }

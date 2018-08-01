@@ -1,6 +1,7 @@
 package utils;
 
-import base.BaseDriver;
+import base.driver.BaseDriver;
+import base.GlobalConfig;
 import org.apache.velocity.texen.util.FileUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
@@ -28,18 +29,6 @@ public class Locator {
         this.driver = driver;
         this.path = path;
     }
-
-//    public WebElement getElement(String key) {
-//        HashMap<String, HashMap<String, String>> map = YamlFile.parseYamlFile(path);
-//        String type = map.get(key).get("type");
-//        String value = map.get(key).get("value");
-//        WebElement element = this.watiForElement(this.getBy(type, value));
-//        if(this.waitElementToBeDisplayed(element)){
-//            return  element;
-//        }else {
-//            return null;
-//        }
-    //   }
 
     /**
      * 根据传入的type、id
@@ -69,9 +58,9 @@ public class Locator {
      * @return
      */
     private WebElement watiForElement(final By by) {
-        long waitTime = Long.parseLong(PropertiesUtil.getPro("WAITTIME"));
+        long waitTime = Long.parseLong(GlobalConfig.getKeyValue("WAITTIME"));
         try {
-            WebElement  element = new WebDriverWait(BaseDriver.driver, Long.parseLong(PropertiesUtil.getPro("WAITTIME")),2000)
+            WebElement  element = new WebDriverWait(driver.getDriver(), Long.parseLong(GlobalConfig.getKeyValue("WAITTIME")),2000)
                     .until(new ExpectedCondition<WebElement>() {
                         public WebElement apply(WebDriver d) {
                             return d.findElement(by);
@@ -93,7 +82,7 @@ public class Locator {
         if(element == null){
             return  wait;
         }else {
-            wait = new WebDriverWait(BaseDriver.driver,Long.parseLong(PropertiesUtil.getPro("WAITTIME"))).until(new ExpectedCondition<Boolean>() {
+            wait = new WebDriverWait(driver.getDriver(),Long.parseLong(GlobalConfig.getKeyValue("WAITTIME"))).until(new ExpectedCondition<Boolean>() {
                 public Boolean apply(WebDriver d){
                     return element.isDisplayed();
                 }

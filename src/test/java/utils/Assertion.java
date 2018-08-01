@@ -1,6 +1,6 @@
 package utils;
 
-import base.BaseDriver;
+import base.driver.BaseDriver;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -48,6 +48,9 @@ public class Assertion {
         log.info(verityStr);
         boolean flag = false;
         String str = null;
+        if(exceptStr == null || exceptStr == ""){
+            return false;
+        }
         try {
             str = "//*[contains(.,'" + exceptStr + "')]";
             boolean b = waitFor.presenceOfElementLocated(By.xpath(str));

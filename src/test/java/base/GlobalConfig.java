@@ -2,6 +2,9 @@ package base;
 
 import utils.PropertiesUtil;
 
+import java.util.Locale;
+import java.util.ResourceBundle;
+
 /**
  * ${DESCRIPTION}
  *
@@ -10,18 +13,34 @@ import utils.PropertiesUtil;
  **/
 public class GlobalConfig {
 
-    private static final String PROTOCOL = PropertiesUtil.getPro("PROTOCOL");
-    private static final String DOMAIN = PropertiesUtil.getPro("DOMAIN");
-    private static final String PORT = PropertiesUtil.getPro("PORT");
-    private static final String LOGINURI = PropertiesUtil.getPro("LOGINURI");
-    public static final String DEFAULTUSERNAME = PropertiesUtil.getPro("DEFAULTUSERNAME");
-    public static final String DEFAULTPASSWORD = PropertiesUtil.getPro("DEFAULTPASSWORD");
-    public static final String GLOBALPRO = System.getProperty("user.dir")+"/src/test/resources/properties/global.properties";
-    public static final String SESSIONPRO = System.getProperty("user.dir")+"/src/test/resources/properties/session.properties";
+    private static ResourceBundle bundle= ResourceBundle.getBundle("properties/global", Locale.CHINA);;
 
-    public static String getLoginUrl(){
-        String url = PROTOCOL+"://"+DOMAIN+":"+PORT+LOGINURI;
-        return url;
+    public static String getKeyValue(String key){
+        if(bundle.containsKey(key)){
+            return bundle.getString(key);
+        }
+        return null;
     }
+
+    public static String getUrl(UrlType urlType){
+        String baseUrl =  getKeyValue("PROTOCOL")+"://"+getKeyValue("DOMAIN")+":"+getKeyValue("PORT");
+        if(urlType == UrlType.LOGIN){
+            return baseUrl+getKeyValue("LOGINURI");
+        }
+        if(urlType == UrlType.XAOBNEWSRELEASE){
+            return baseUrl+getKeyValue("XAOBNEWSRELEASEURI");
+        }
+        if(urlType == UrlType.BANNER){
+            return baseUrl+getKeyValue("BANNERURI");
+        }
+        return null;
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println(getUrl(UrlType.LOGIN));
+    }
+
+
 
 }

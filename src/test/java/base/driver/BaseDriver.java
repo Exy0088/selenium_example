@@ -1,13 +1,14 @@
-package base;
+package base.driver;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utils.KillProcess;
-import utils.PropertiesUtil;
 import utils.log.Log;
 
+import java.util.Iterator;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -19,18 +20,21 @@ import java.util.Set;
 public class BaseDriver {
 
     private Log log = new Log(this.getClass());
-    public static  WebDriver driver;
+    public  WebDriver driver;
 
     public BaseDriver(BrowserType browserType){
        this.driver = getDriver( browserType);
     }
 
+    public  WebDriver getDriver() {
+        return driver;
+    }
+
     public WebDriver getDriver(BrowserType browserType){
-        WebDriver driver = null;
+        Browser browser = null;
         if( browserType == null) {
             log.error("浏览器传参有误");
         }else {
-            Browser browser = null;
             KillProcess.kill(browserType);
             log.info("读取浏览器并将其初始化");
             switch (browserType){
@@ -51,15 +55,8 @@ public class BaseDriver {
                     log.info("初始化谷歌浏览器");
                     break;
             }
-            try {
-                driver = browser.getDriver();
-                log.info("------------------开始执行测试---------------");
-            } catch (Exception e) {
-                log.error("没有成功浏览器环境配置错误");
-                e.printStackTrace();
-            }
         }
-        return driver;
+        return browser.getDriver();
     }
 
 
@@ -111,14 +108,27 @@ public class BaseDriver {
         for(Cookie c :cookies){
             if(c.getName().equals("SESSION")){
 
-                PropertiesUtil.writePops(c.getName(),c.getValue());
+               // PropertiesUtil.writePops(c.getName(),c.getValue());
             }
         }
     }
 
-    public void setCookie(Cookie cookie){
+    /**
+     * 设置Cookie
+     * @param map
+     */
+    public void setCookie(Map map){
+        Cookie cookie = null;
+       if(map.size() > 0){
+           Iterator it = map.entrySet().iterator();
+           while (it.hasNext()){
+               Map.Entry entry = (Map.Entry)it.next();
+               cookie = new Cookie((String)entry.getKey(),(String)entry.getValue());
+           }
+       }
         driver.manage().deleteAllCookies();
         driver.manage().addCookie(cookie);
+        refresh();
     }
 
 
@@ -142,4 +152,6 @@ public class BaseDriver {
         }
         String windowHandle = driver.getWindowHandle();
     }
+
+
 }

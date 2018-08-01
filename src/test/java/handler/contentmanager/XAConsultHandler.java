@@ -1,9 +1,13 @@
 package handler.contentmanager;
 
-import base.BaseDriver;
+import base.driver.BaseDriver;
 import handler.BaseHandler;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import page.contentmanager.XAConsultPage;
 import utils.log.Log;
+
+import java.util.List;
 
 /**
  *  雄安咨询页面元素操作类
@@ -47,5 +51,12 @@ public class XAConsultHandler extends BaseHandler{
      */
     public void clickSearchButton(){
         this.click(xaConsultPage.getSearchButton());
+    }
+
+    public Integer getConsultSize(){
+        WebElement tableTr = xaConsultPage.getTableTr();
+        WebElement tbody = tableTr.findElement(By.tagName("tbody"));
+        List<WebElement> tr = tbody.findElements(By.tagName("tr"));
+        return tr.size();
     }
 }
