@@ -15,7 +15,8 @@ import java.util.Properties;
  **/
 public class PropertiesUtil {
 
-    private static Properties props;
+    private  Properties props;
+    private  String[] filePath;
 
 //    public PropertiesUtil() {
 //
@@ -32,16 +33,21 @@ public class PropertiesUtil {
 //    }
 
 
+    public PropertiesUtil(String... filePath) {
+        this.filePath = new String[filePath.length];
+        for (int i=0;i<filePath.length;i++){
+           this.filePath[i]= getFilePath(filePath[i]);
+        }
+    }
 
-    private static Properties readProperties(){
+    private  Properties readProperties(){
 
         props = new Properties();
-        String[] filePath = {"src\\test\\resources\\properties\\global.properties"};
         if(filePath == null ){
             System.out.println("文件路径不能为空");
         }else {
-            for(int i=0;i<filePath.length;i++){
-                final String path = filePath[i];
+            for (int i = 0; i <filePath.length; i++){
+                String path = filePath[i];
                 if(path.endsWith(".properties")){
                     File f = new File(path);
                     InputStream is = null;
@@ -90,28 +96,27 @@ public class PropertiesUtil {
      * @param key
      * @param value
      */
-    public static void writePops(String filePath,String key,String value){
-        props = readProperties();
+    public  void writePops(String file,String key,String value){
+        props = new Properties();
         FileOutputStream fos = null;
         if(key != null && key != "" && value != null && value != ""){
 
-            try {
-                if(!props.isEmpty()){
-                    for(Enumeration e = props.propertyNames(); e.hasMoreElements();){
-                        String s = (String) e.nextElement(); // 遍历所有元素
-                        if (s.equals(key)) {
-                            /**如果键相同则覆盖*/
-                            props.setProperty(key,value);
-
-                        } else {/**否则就原样写入*/
-                            props.setProperty(key,value);
-                            props.setProperty(s,props.getProperty(s));
-                        }
-                    }
-                }else{
+              try {
+//                if(!props.isEmpty()){
+//                    for(Enumeration e = props.propertyNames(); e.hasMoreElements();){
+//                        String s = (String) e.nextElement(); // 遍历所有元素
+//                        if (s.equals(key)) {
+//                            /**如果键相同则覆盖*/
+//                            props.setProperty(key,value);
+//
+//                        } else {/**否则就原样写入*/
+//                            props.setProperty(s,props.getProperty(s));
+//                        }
+//                    }
+//                }else{
                     props.setProperty(key,value);
-                }
-                fos = new FileOutputStream(filePath);
+//                }
+                fos = new FileOutputStream(getFilePath(file));
                 props.store(fos,"SaveCookie");
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
@@ -128,7 +133,7 @@ public class PropertiesUtil {
      * @param key
      * @return
      */
-    public static   String getPro(String key){
+    public    String getPro(String key){
         props = readProperties();
         String property = null;
         if(key != "" && key !=null){
@@ -140,7 +145,13 @@ public class PropertiesUtil {
         }
         return null;
     }
-
+    private  String getFilePath(String FileName) {
+        String userdirPath = System.getProperty("user.dir");
+        if (userdirPath.endsWith("target")) {
+            userdirPath = userdirPath.replace("target", "");
+        }
+        return userdirPath + "/src/test/resources/" + FileName;
+    }
     public static void main(String[] args) {
 //        long l = System.currentTimeMillis();
 //        PropertiesUtil parseProperties = getProperInstance("src\\test\\resources\\properties\\global.properties");
@@ -157,7 +168,6 @@ public class PropertiesUtil {
         //getPro("WAITTIME");
 
         //writePops("src\\\\test\\\\resources\\\\properties\\\\global.properties","ss","dd");
-        String searchcontent = getPro("SESSION");
-        System.out.println(searchcontent);
+
     }
 }

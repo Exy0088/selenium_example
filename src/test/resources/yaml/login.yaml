@@ -7,3 +7,6 @@ password:
 login_button:
   type: "xpath"
   value: "/html/body/div/form/div[4]/button"
+login_username:
+  type: "className"
+  value: "font-bold"

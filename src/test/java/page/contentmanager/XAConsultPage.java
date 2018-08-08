@@ -71,4 +71,40 @@ public class XAConsultPage {
         return locator.getLocator("table_tr",true);
     }
 
+    /**
+     * 定位添加资讯按钮
+     * @return
+     */
+    public WebElement getAddButton(){
+        return locator.getLocator("add_button",true);
+    }
+
+    public WebElement getNewsTitle(){
+        return locator.getLocator("news_title",true);
+    }
+
+    public WebElement getNewsSource(){
+        return locator.getLocator("news_source",true);
+    }
+
+    public WebElement getNewsUpload(){
+        return locator.getLocator("news_upload",true);
+    }
+
+    public WebElement getNewsDescribe(){
+        return locator.getLocator("news_describe",true);
+    }
+
+    public WebElement getNewsContent(){
+        return locator.getLocator("news_content",true);
+    }
+
+    public WebElement getAddImgSubmit(){
+        return locator.getLocator("add_img_submit",true);
+    }
+    public WebElement getAddButtonSubmit(){
+        return locator.getLocator("add_button_submit",true);
+    }
+
+
 }

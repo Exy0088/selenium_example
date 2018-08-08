@@ -163,7 +163,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
                 }
                 if(name.length()>0){
                     if(name.length()>50){
-                        name= result.getTestClass().getName()+"."+result.getMethod().getMethodName() +"["+ name.substring(0,30)+"..."+"}]";
+                        name= result.getTestClass().getName()+"."+result.getMethod().getMethodName() +"["+ name+"]";
 
                     }
                 }else{

@@ -53,10 +53,34 @@ public class XAConsultHandler extends BaseHandler{
         this.click(xaConsultPage.getSearchButton());
     }
 
-    public Integer getConsultSize(){
-        WebElement tableTr = xaConsultPage.getTableTr();
-        WebElement tbody = tableTr.findElement(By.tagName("tbody"));
-        List<WebElement> tr = tbody.findElements(By.tagName("tr"));
-        return tr.size();
+
+    /**
+     * 点击添加按钮
+     */
+    public void clickAddButton(){
+        this.click(xaConsultPage.getAddButton());
     }
+
+    public void sendKeysNewsTitle(String title){
+        this.clearAndSendKeys(xaConsultPage.getNewsTitle(),title);
+    }
+    public void sendNewsSource(String source){
+        this.clearAndSendKeys(xaConsultPage.getNewsSource(),source);
+    }
+    public void clickNewsNewsUpload(){
+        this.click(xaConsultPage.getNewsUpload());
+    }
+    public void sendKeysNewsDescribe(String title){
+        this.clearAndSendKeys(xaConsultPage.getNewsDescribe(),title);
+    }
+    public void sendKeysNewsContent(String title){
+        this.clearAndSendKeys(xaConsultPage.getNewsContent(),title);
+    }
+    public void clickAddImgSub(){
+        this.click(xaConsultPage.getAddImgSubmit());
+    }
+    public void clickAddButtonSub(){
+        this.click(xaConsultPage.getAddButtonSubmit());
+    }
+
 }

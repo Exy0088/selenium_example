@@ -1,9 +1,8 @@
 package base.driver;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Cookie;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import base.GlobalConfig;
+import cn.hutool.core.util.StrUtil;
+import org.openqa.selenium.*;
 import utils.KillProcess;
 import utils.log.Log;
 
@@ -131,6 +130,19 @@ public class BaseDriver {
         refresh();
     }
 
+    /**
+     * 设置Cookie
+     * @param key
+     */
+    public void setCookie(String key){
+        Cookie cookie = null;
+        if(StrUtil.isNotEmpty(key)){
+            cookie = new Cookie(key,GlobalConfig.getKeyValue(key));
+        }
+        driver.manage().deleteAllCookies();
+        driver.manage().addCookie(cookie);
+        refresh();
+    }
 
 
     public void refresh(){
@@ -143,8 +155,18 @@ public class BaseDriver {
 
     public void swithFrame(int index){
         driver.switchTo().frame(index);
+
     }
 
+    public void swithFrame(String name){
+        driver.switchTo().frame(name);
+    }
+    public void defaultFrame(){
+        driver.switchTo().defaultContent();
+    }
+    public void parentFrame(){
+        driver.switchTo().parentFrame();
+    }
 
     public void swichWindow(){
         Set<String> windowHandles = driver.getWindowHandles();
@@ -153,5 +175,11 @@ public class BaseDriver {
         String windowHandle = driver.getWindowHandle();
     }
 
+    /**
+     * 移动到页面底部
+     */
+    public void moveScroll(){
+        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
+    }
 
 }

@@ -2,9 +2,13 @@ package base;
 
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
+import cn.hutool.json.JSONUtil;
 import org.apache.poi.ss.formula.functions.T;
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Screen;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import pageobject.BasePageObject;
 import pageobject.LoginCaseData;
 import utils.ExcelUtils;
 import utils.PropertiesUtil;
@@ -21,21 +25,18 @@ import java.util.*;
  **/
 public class XACommon {
 
-    public static Map getSession(String url, String username, String password) {
+    public static void writeSession(String url, String username, String password) {
 
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("username", username);
         map.put("password", password);
-        String session = "";
         HttpResponse response = HttpRequest.post(url).form(map).timeout(2000).execute();
         List<HttpCookie> cookie = response.getCookie();
-        map.clear();
         for (HttpCookie httpCookie : cookie) {
             if (httpCookie.getName().equals("SESSION")) {
-                map.put(httpCookie.getName(),httpCookie.getValue());
+               GlobalConfig.setKeyValue("properties/cookie.properties",httpCookie.getName(),httpCookie.getValue());
             }
         }
-        return map;
     }
 
 //    @Test
@@ -88,5 +89,70 @@ public class XACommon {
         return size;
     }
 
+    public static Iterator<Object[]> casesData(String filePath, String caseSheet,Method method) throws Exception{
+        //创建一个Object数组集合
+        List<Object[]> result = new ArrayList<Object[]>();
+        List<List<BasePageObject>> caseDatas = XACommon.casesData(filePath, caseSheet, method, BasePageObject.class);
+        //循环遍历集合
+        for(int i=0;i<caseDatas.size();i++){
+            for(int j =0;j<caseDatas.get(i).size();j++){
+                BasePageObject data = new BasePageObject();
+                data = caseDatas.get(i).get(j);
+                if(data != null){
+                    if(data.getIsRun() == "是" || data.getIsRun().equals("是")){
+                        //将遍历出来的映射实体类，添加到Object数组集合中
+                        result.add(new Object[]{data});
+                    }
+                }
+            }
+        }
+        return result.iterator();
+    }
 
+    public static String getFilePath(String FileName) {
+        String userdirPath = System.getProperty("user.dir");
+        if(userdirPath.endsWith("target")){
+            userdirPath = userdirPath.replace("target","");
+        }
+        return userdirPath + "\\src\\test\\resources\\" + FileName;
+    }
+
+    public static String strSub(String content,int fromIndex, int toIndex,boolean flag){
+        String subStr = content;
+        if(content.length()>16){
+            if(flag == false){
+                return subStr = content.substring(fromIndex,toIndex);
+            }else {
+                return subStr = content.substring(fromIndex,toIndex)+"......";
+            }
+        }
+        return subStr;
+    }
+
+    /**
+     * 线程等待
+     * @param waitTime
+     */
+    public static void sleep(long waitTime){
+        try {
+            Thread.sleep(waitTime);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 使用screen模拟点击windows上传控件
+     * @param url
+     * @param clickIcon
+     */
+    public static void uploadImg(String url,String clickIcon){
+        Screen screen = new Screen();
+        screen.type(url);
+        try {
+            screen.click(clickIcon);
+        } catch (FindFailed findFailed) {
+            findFailed.printStackTrace();
+        }
+    }
 }

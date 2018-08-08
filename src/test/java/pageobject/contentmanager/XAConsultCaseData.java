@@ -1,96 +1,67 @@
 package pageobject.contentmanager;
 
+import pageobject.BasePageObject;
+
 /**
  * ${DESCRIPTION}
  *
  * @author hezhaowei
  * @create 2018-07-31 10:55
  **/
-public class XAConsultCaseData {
-    private String ID;//用例ID
-    private String TestSuite;//测试集
-    private String TestCaseType;//测试用例类型
-    private String TestCaseName;//测试用例名称
-    private String TitleName;//输入标题
-    private String Expected;//预期结果
-    private String TestExecuteTime;//执行时间
-    private String TestResult;//执行结果
+public class XAConsultCaseData extends BasePageObject{
 
-    public String getID() {
-        return ID;
+    private String title;
+    private String newsTitle;
+    private String newsSource;
+    private String newsUpload;
+    private String newsDescribe;
+    private String newsContent;
+
+    public String getTitle() {
+        return title;
     }
 
-    public void setID(String ID) {
-        this.ID = ID;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getTestSuite() {
-        return TestSuite;
+    public String getNewsTitle() {
+        return newsTitle;
     }
 
-    public void setTestSuite(String testSuite) {
-        TestSuite = testSuite;
+    public void setNewsTitle(String newsTitle) {
+        this.newsTitle = newsTitle;
     }
 
-    public String getTestCaseType() {
-        return TestCaseType;
+    public String getNewsSource() {
+        return newsSource;
     }
 
-    public void setTestCaseType(String testCaseType) {
-        TestCaseType = testCaseType;
+    public void setNewsSource(String newsSource) {
+        this.newsSource = newsSource;
     }
 
-    public String getTestCaseName() {
-        return TestCaseName;
+    public String getNewsUpload() {
+        return newsUpload;
     }
 
-    public void setTestCaseName(String testCaseName) {
-        TestCaseName = testCaseName;
+    public void setNewsUpload(String newsUpload) {
+        this.newsUpload = newsUpload;
     }
 
-    public String getTitleName() {
-        return TitleName;
+    public String getNewsDescribe() {
+        return newsDescribe;
     }
 
-    public void setTitleName(String titleName) {
-        TitleName = titleName;
+    public void setNewsDescribe(String newsDescribe) {
+        this.newsDescribe = newsDescribe;
     }
 
-    public String getExpected() {
-        return Expected;
+    public String getNewsContent() {
+        return newsContent;
     }
 
-    public void setExpected(String expected) {
-        Expected = expected;
-    }
-
-    public String getTestExecuteTime() {
-        return TestExecuteTime;
-    }
-
-    public void setTestExecuteTime(String testExecuteTime) {
-        TestExecuteTime = testExecuteTime;
-    }
-
-    public String getTestResult() {
-        return TestResult;
-    }
-
-    public void setTestResult(String testResult) {
-        TestResult = testResult;
-    }
-
-    @Override
-    public String toString() {
-        return "XAConsultCaseData{" +
-                "ID='" + ID + '\'' +
-                ", TestSuite='" + TestSuite + '\'' +
-                ", TestCaseType='" + TestCaseType + '\'' +
-                ", TestCaseName='" + TestCaseName + '\'' +
-                ", TitleName='" + TitleName + '\'' +
-                ", Expected='" + Expected + '\'' +
-                ", TestExecuteTime='" + TestExecuteTime + '\'' +
-                ", TestResult='" + TestResult + '\'' +
-                '}';
+    public void setNewsContent(String newsContent) {
+        this.newsContent = newsContent;
     }
 }

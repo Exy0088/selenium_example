@@ -1,5 +1,8 @@
 package base;
 
+import cn.hutool.core.io.file.FileWriter;
+import cn.hutool.core.util.StrUtil;
+import cn.hutool.setting.dialect.Props;
 import utils.PropertiesUtil;
 
 import java.util.Locale;
@@ -13,13 +16,16 @@ import java.util.ResourceBundle;
  **/
 public class GlobalConfig {
 
-    private static ResourceBundle bundle= ResourceBundle.getBundle("properties/global", Locale.CHINA);;
+    private static PropertiesUtil propertiesUtil = new PropertiesUtil("properties\\global.properties","properties\\cookie.properties");
 
     public static String getKeyValue(String key){
-        if(bundle.containsKey(key)){
-            return bundle.getString(key);
+       return propertiesUtil.getPro(key);
+    }
+
+    public static void setKeyValue(String file,String key, String value){
+        if(StrUtil.isNotEmpty(key) && StrUtil.isNotEmpty(value)){
+            propertiesUtil.writePops(file,key,value);
         }
-        return null;
     }
 
     public static String getUrl(UrlType urlType){
@@ -37,8 +43,7 @@ public class GlobalConfig {
     }
 
     public static void main(String[] args) {
-
-        System.out.println(getUrl(UrlType.LOGIN));
+        //setKeyValue("session","dsfsadfsadfsadfsadfsadfsda");
     }
 
 

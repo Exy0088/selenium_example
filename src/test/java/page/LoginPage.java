@@ -48,4 +48,8 @@ public class LoginPage {
     public WebElement getLoginBtn(){
         return  locator.getLocator("login_button",true);
     }
+
+    public WebElement getLoginUsername(){
+        return locator.getLocator("login_username",true);
+    }
 }

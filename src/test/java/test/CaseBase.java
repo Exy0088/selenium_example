@@ -2,6 +2,8 @@ package test;
 
 import base.driver.BaseDriver;
 import base.driver.BrowserType;
+import cn.hutool.core.util.StrUtil;
+import cn.hutool.json.JSONUtil;
 import org.testng.annotations.*;
 import utils.log.Log;
 
@@ -37,6 +39,14 @@ public class CaseBase {
             log.error("没有成功浏览器环境配置错误");
             e.printStackTrace();
         }
+    }
+
+    public <T> T getJson(String data,Class<T> bean){
+        T t = null;
+        if(StrUtil.isNotEmpty(data)){
+             t = JSONUtil.toBean(data, bean);
+        }
+        return t;
     }
 
 

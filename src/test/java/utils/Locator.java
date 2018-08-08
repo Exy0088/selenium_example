@@ -48,6 +48,8 @@ public class Locator {
             by = By.className(value);
         }else if (type.equals("linkText")) {
             by = By.linkText(value);
+        }else if(type.equals("css")){
+            by = By.cssSelector(value);
         }
         return by;
     }
@@ -59,16 +61,18 @@ public class Locator {
      */
     private WebElement watiForElement(final By by) {
         long waitTime = Long.parseLong(GlobalConfig.getKeyValue("WAITTIME"));
+        WebElement  element = null;
         try {
-            WebElement  element = new WebDriverWait(driver.getDriver(), Long.parseLong(GlobalConfig.getKeyValue("WAITTIME")),2000)
+              element = new WebDriverWait(driver.getDriver(), Long.parseLong(GlobalConfig.getKeyValue("WAITTIME")),2000)
                     .until(new ExpectedCondition<WebElement>() {
                         public WebElement apply(WebDriver d) {
                             return d.findElement(by);
                         }
                     });
             return element;
-        } catch (TimeoutException e) {
-            throw new NoSuchElementException(" 等待 " + waitTime+"秒，没有定位到"+by.toString());
+        } catch (Exception e) {
+            log.info(" 等待 " + waitTime+"秒，没有定位到"+by.toString());
+            return element;
         }
     }
 

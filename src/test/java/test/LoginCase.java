@@ -3,10 +3,12 @@ package test;
 import action.LoginAction;
 import base.*;
 import base.driver.BaseDriver;
+import cn.hutool.json.JSONUtil;
 import org.apache.poi.ss.formula.functions.T;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.*;
+import pageobject.BasePageObject;
 import pageobject.LoginCaseData;
 import utils.Assertion;
 import utils.ExcelUtils;
@@ -41,19 +43,7 @@ public class LoginCase extends CaseBase{
      */
     @DataProvider(name = "longinData")
     public Iterator<Object[]> loginData(Method method) throws Exception{
-        //创建一个Object数组集合
-        List<Object[]> result = new ArrayList<Object[]>();
-        List<List<LoginCaseData>> caseDatas = XACommon.casesData(filePath, caseSheet, method, LoginCaseData.class);
-        //循环遍历集合
-        for(int i=0;i<caseDatas.size();i++){
-            for(int j =0;j<caseDatas.get(i).size();j++){
-                caseData = new LoginCaseData();
-                caseData = caseDatas.get(i).get(j);
-                //将遍历出来的映射实体类，添加到Object数组集合中
-                result.add(new Object[]{caseData});
-            }
-        }
-        return result.iterator();
+       return XACommon.casesData(filePath,caseSheet,method);
     }
 
     //每个Test运行时之前都要调用该方法
@@ -77,13 +67,11 @@ public class LoginCase extends CaseBase{
      * @throws Exception
      */
     @Test(description = "登录成功用例", dataProvider = "longinData")//注入数据
-    public void loginSuccess(LoginCaseData data)throws Exception {//需要一个LoginCaseData 这个实体类，获得Excel文件中的用户名、密码数据
-        loginAction.login(data.getInputUsername(), data.getInputPassword());//调用loginaction业务类中login方法，
-        //判断页面是否出现“雄安市民服务中心”文本，若出现则返回登录成功，若失败则返回登录失败字符
-        final String message = asser.VerityNotTextPresent("首页") ? Message.LOGINSUCCESS : Message.LOGINFAIL;
-        Reporter.log(data.toString());
+    public void loginSuccess(BasePageObject bpo)throws Exception {//需要一个LoginCaseData 这个实体类，获得Excel文件中的用户名、密码数据
+        caseData = getJson(bpo.getInputData(),LoginCaseData.class);
+        loginAction.login(caseData.getUsername(), caseData.getPassword());//调用loginaction业务类中login方法，
         //调用Assert类中的方法，实际值与预期值进行比较
-        Assert.assertEquals(message, data.getExpected());
+        Assert.assertEquals(loginAction.asserLogin(),bpo.getExpected());
     }
 
     /**
@@ -91,11 +79,10 @@ public class LoginCase extends CaseBase{
      * @throws Exception
      */
     @Test(description = "登录失败用例", dataProvider = "longinData")
-    public void loginFail(LoginCaseData data)throws Exception{
-        loginAction.login(data.getInputUsername(),data.getInputPassword());
-        final String  message = asser.VerityNotTextPresent("首页")? Message.LOGINSUCCESS: Message.LOGINFAIL;
-        Reporter.log(data.toString());
-        Assert.assertEquals(message,data.getExpected());
+    public void loginFail(BasePageObject bpo)throws Exception{
+        caseData = getJson(bpo.getInputData(),LoginCaseData.class);
+        loginAction.login(caseData.getUsername(),caseData.getPassword());
+        Assert.assertEquals(loginAction.asserLogin(),bpo.getExpected());
     }
 
 

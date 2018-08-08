@@ -16,3 +16,42 @@ search_button:
 table_tr:
   type: "id"
   value: "XaobNewsReleaseTable"
+
+#---添加资讯---
+#添加资讯按钮
+add_button:
+  type: "xpath"
+  value: "//*[@id='XaobNewsReleaseTableToolbar']/button[1]"
+#添加资讯title
+add_title:
+  type: "className"
+  value: "layui-layer-title"
+#资讯标题
+news_title:
+  type: "id"
+  value: "xaobNewsReleaseTitle"
+#资讯来源
+news_source:
+  type: "id"
+  value: "xaobNewsReleaseSource"
+#资讯上传图片
+news_upload:
+  type: "id"
+  value: "xaobNewsReleaseImgBtnId"
+#资讯简介
+news_describe:
+  type: "id"
+  value: "xaobNewsReleaseDescribe"
+#资讯内容
+news_content:
+  type: "xpath"
+  value: "/html/body[@class='view']"
+#添加图片提交按钮
+add_img_submit:
+  type: "xpath"
+  value: ".//*[@id='layui-layer1']/div[2]/div/div/div/div[2]/div/button[1]"
+#添加资讯提交按钮
+add_button_submit:
+  type: "id"
+  value: "ensure"
+

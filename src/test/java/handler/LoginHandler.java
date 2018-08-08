@@ -46,4 +46,9 @@ public class LoginHandler extends BaseHandler {
     public void clickLoginBtn(){
         this.click(lg.getLoginBtn());
     }
+
+    public String getLoginNameText(){
+        return  this.getText(lg.getLoginUsername());
+    }
+
 }

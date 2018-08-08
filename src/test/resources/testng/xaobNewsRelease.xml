@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="雄安资讯页面">
+    <parameter name="${testBrowser}" value="${testBrowser}"/>
+    <test name="雄安资讯页面title检查Case" verbose="2" preserve-order="true">
+        <classes>
+            <class name="test.contenmanager.xaconsult.XAConsultCase">
+                <methods>
+                    <include name="checkPageTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="雄安资讯检索Case" verbose="2" preserve-order="true">
+        <classes>
+            <class name="test.contenmanager.xaconsult.XAConsultCase">
+                <methods>
+                    <include name="queryNews"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="添加资讯页面title检查" verbose="2" preserve-order="true">
+        <classes>
+            <class name="test.contenmanager.xaconsult.XAConsultCase">
+                <methods>
+                    <include name="checkAddTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="添加资讯" verbose="2" preserve-order="true">
+        <classes>
+            <class name="test.contenmanager.xaconsult.XAConsultCase">
+                <methods>
+                    <include name="addNews"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

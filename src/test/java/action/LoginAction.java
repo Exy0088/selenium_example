@@ -1,5 +1,6 @@
 package action;
 
+import base.Message;
 import base.driver.BaseDriver;
 import handler.LoginHandler;
 import org.openqa.selenium.WebDriver;
@@ -19,10 +20,12 @@ public class LoginAction {
     private Log log = new Log(this.getClass());
     private BaseDriver driver;
     private LoginHandler lh;
+    private Assertion asser;
 
     public LoginAction(BaseDriver driver) {
         this.driver = driver;
         this.lh = new LoginHandler(driver);
+        this.asser = new Assertion(driver);
     }
 
     /**
@@ -38,5 +41,20 @@ public class LoginAction {
             lh.SendKeysPass(password);
         }
         lh.clickLoginBtn();
+    }
+
+    /**
+     *
+     *
+     * @return
+     */
+    public String asserLogin(){
+        String message = null;
+        if(lh.getLoginNameText() == null){
+            message = Message.LOGINFAIL;
+        }else {
+            message = Message.LOGINSUCCESS;
+        }
+         return message;
     }
 }

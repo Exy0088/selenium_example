@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="" parallel="tests" thread-count="1">
+    <parameter name="${testBrowser}" value="${testBrowser}"/>
+    <test verbose="2" preserve-order="true" name="登录成功Case">
+        <classes>
+            <class name="test.LoginCase">
+                <methods>
+                    <include name="loginSuccess"/>
+                    <include name="loginFail"/>
+                    <!--<include name="loginFail"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!--<test verbose="2" preserve-order="true" name="登录失败Case">-->
+        <!--<classes>-->
+            <!--<class name="test.LoginCase" >-->
+                <!--<methods >-->
+                    <!--&lt;!&ndash;<include name="loginSuccess"/>&ndash;&gt;-->
+                    <!---->
+                <!--</methods>-->
+            <!--</class>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<listeners>-->
+        <!--<listener class-name="utils.ExtentTestNGIReporterListener"/>-->
+    <!--</listeners>-->
+</suite>

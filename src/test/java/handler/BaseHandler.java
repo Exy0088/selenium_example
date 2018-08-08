@@ -55,4 +55,11 @@ public class BaseHandler {
         }
         return null;
     }
+
+    /**
+     * 移动到页面底部
+     */
+    public void moveScroll(){
+        driver.moveScroll();
+    }
 }

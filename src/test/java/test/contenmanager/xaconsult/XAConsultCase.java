@@ -1,6 +1,7 @@
 package test.contenmanager.xaconsult;
 
 import action.contentmanager.xaconsult.XAConsultAction;
+import base.Message;
 import base.UrlType;
 import base.driver.BaseDriver;
 import base.GlobalConfig;
@@ -8,6 +9,7 @@ import base.XACommon;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.*;
+import pageobject.BasePageObject;
 import pageobject.LoginCaseData;
 import pageobject.contentmanager.XAConsultCaseData;
 import test.CaseBase;
@@ -32,60 +34,64 @@ public class XAConsultCase extends CaseBase{
     private Log log = new Log(this.getClass());
     private BaseDriver driver;
     private XAConsultCaseData caseData;
-    private XAConsultAction xaca;
+    private XAConsultAction xaConsultAction;
     private Assertion assertion;
     private final String filePath = "testcase\\xiongan.xls";
     private final String caseSheet = "内容管理-雄安资讯测试数据";
-    private Map map;
+
 
     @BeforeClass
     public void init(){
-        map = XACommon.getSession(GlobalConfig.getUrl(UrlType.LOGIN), GlobalConfig.getKeyValue("DEFAULTUSERNAME"), GlobalConfig.getKeyValue("DEFAULTPASSWORD"));
+      XACommon.writeSession(GlobalConfig.getUrl(UrlType.LOGIN), GlobalConfig.getKeyValue("DEFAULTUSERNAME"), GlobalConfig.getKeyValue("DEFAULTPASSWORD"));
+    }
+
+    @DataProvider(name = "XAConsultData")
+    public Iterator<Object[]> XAConsultData(Method method) throws Exception {
+        return XACommon.casesData(filePath,caseSheet,method);
     }
 
     @BeforeMethod
     public void setUp(){
-
         //使用父类的获得driver的方法
         this.driver = super.getDriver();
-        xaca = new XAConsultAction(driver);
+        xaConsultAction = new XAConsultAction(driver);
         assertion = new Assertion(driver);
         driver.browserMax();
         driver.get(GlobalConfig.getUrl(UrlType.LOGIN));
-        driver.setCookie(map);
-        driver.get(GlobalConfig.getUrl(UrlType.XAOBNEWSRELEASE));
+        driver.setCookie("SESSION");
+    }
+
+    @Test(description = "资讯页面title检查", dataProvider = "XAConsultData")
+    public void checkPageTitle(BasePageObject bpo)throws Exception{
+        xaConsultAction.checkPageTitle();
+        Assert.assertTrue(assertion.VerityNotTextPresent(bpo.getExpected()),"资讯页面title检查");
     }
 
     @Test(description = "资讯检索", dataProvider = "XAConsultData")
-    public void query(XAConsultCaseData caseData){
-        Reporter.log(caseData.toString());
-        xaca.queryConsult(caseData.getTitleName());
-        Assert.assertTrue(assertion.VerityNotTextPresent(XACommon.getNum(caseData.getExpected())));
+    public void queryNews(BasePageObject object)throws Exception{
+        caseData = getJson(object.getInputData(),XAConsultCaseData.class);
+        xaConsultAction.queryConsult(caseData.getTitle());
+        Assert.assertTrue(assertion.VerityNotTextPresent(object.getExpected()),"资讯检索");
+    }
 
+    @Test(description = "添加资讯页面title检查", dataProvider = "XAConsultData")
+    public void checkAddTitle(BasePageObject object){
+        xaConsultAction.checkAddTitle();
+        Assert.assertTrue(assertion.VerityNotTextPresent(object.getExpected()),"添加资讯页面title检查");
+    }
 
+    @Test(description = "添加资讯", dataProvider = "XAConsultData")
+    public void addNews(BasePageObject object){
+        caseData = getJson(object.getInputData(),XAConsultCaseData.class);
+        xaConsultAction.addNews(caseData);
+        String newsTitle = XACommon.strSub(caseData.getNewsTitle(), 0, 15, true);
+        String message = assertion.VerityNotTextPresent(newsTitle) ? Message.ADDSUCCESS : Message.ADDFAIL;
+        Assert.assertEquals(message,object.getExpected());
     }
 
     @AfterMethod
     public void tearDown(Method method){
         driver.closed();
     }
-
-    @DataProvider(name = "XAConsultData")
-    public Iterator<Object[]> XAConsultData(Method method) throws Exception {
-        //创建一个Object数组集合
-        List<Object[]> result = new ArrayList<Object[]>();
-        List<List<XAConsultCaseData>> caseDatas = XACommon.casesData(filePath, caseSheet, method, XAConsultCaseData.class);
-        //循环遍历集合
-        for(int i=0;i<caseDatas.size();i++){
-            for(int j =0;j<caseDatas.get(i).size();j++){
-                caseData = new XAConsultCaseData();
-                caseData = caseDatas.get(i).get(j);
-                //将遍历出来的映射实体类，添加到Object数组集合中
-                result.add(new Object[]{caseData});
-            }
-        }
-        return result.iterator();
-    }
-
 
 }
