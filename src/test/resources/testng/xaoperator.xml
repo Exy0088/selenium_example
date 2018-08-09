@@ -3,23 +3,23 @@
 
 <suite name="雄安运营UI自动化测试">
     <parameter name="${testBrowser}" value="${testBrowser}"/>
-    <test name="自动登录测试">
-        <classes>
-            <class name="test.LoginCase">
-                <methods>
-                    <include name="loginSuccess"/>
-                    <include name="loginFail"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
+    <!--<test name="自动登录测试">-->
+        <!--<classes>-->
+            <!--<class name="test.LoginCase">-->
+                <!--<methods>-->
+                    <!--<include name="loginSuccess"/>-->
+                    <!--<include name="loginFail"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+        <!--</classes>-->
+    <!--</test>-->
     <test name="资讯页面">
         <classes>
             <class name="test.contenmanager.xaconsult.XAConsultCase">
                 <methods>
-                    <include name="checkPageTitle"/>
-                    <include name="queryNews"/>
-                    <include name="checkAddTitle"/>
+                    <!--<include name="checkPageTitle"/>-->
+                    <!--<include name="queryNews"/>-->
+                    <!--<include name="checkAddTitle"/>-->
                     <include name="addNews"/>
                 </methods>
             </class>
