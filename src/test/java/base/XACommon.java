@@ -155,4 +155,27 @@ public class XACommon {
             findFailed.printStackTrace();
         }
     }
+
+    /**
+     * 上传文件，需要点击弹出上传照片的窗口才行
+     *
+     * @parambrower
+     *            使用的浏览器名称
+     * @paramfile
+     *            需要上传的文件及文件名
+     */
+    public static void handleUpload(String browser, String filePath) {
+        String executeFile= getFilePath("script\\uploadImg.exe"); //定义了upload.exe文件的路径
+        String cmd= "\""+ executeFile+ "\""+ " "+ "\""+ browser+ "\""+ " "+ "\""+ filePath+ "\"";
+        try{
+            Process p = Runtime.getRuntime().exec(cmd);
+            p.waitFor();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void main(String[] args) {
+        handleUpload("firefox","C:\\Users\\cdyoue\\Pictures\\xa\\timg.jpg");
+    }
 }

@@ -19,10 +19,16 @@ import java.util.Set;
 public class BaseDriver {
 
     private Log log = new Log(this.getClass());
-    public  WebDriver driver;
+    private  WebDriver driver;
+    private  BrowserType browserType;
 
     public BaseDriver(BrowserType browserType){
        this.driver = getDriver( browserType);
+       this.browserType = browserType;
+    }
+
+    public BrowserType getBrowserType() {
+        return browserType;
     }
 
     public  WebDriver getDriver() {

@@ -16,6 +16,7 @@ import org.sikuli.script.FindFailed;
 import org.sikuli.script.Screen;
 import pageobject.BasePageObject;
 import pageobject.contentmanager.XAConsultCaseData;
+import test.contenmanager.xaconsult.XAConsultCase;
 import utils.Assertion;
 import utils.PropertiesUtil;
 import utils.log.Log;
@@ -81,7 +82,8 @@ public class XAConsultAction {
         xaConsultHandler.sendKeysNewsTitle(caseData.getNewsTitle());
         xaConsultHandler.sendNewsSource(caseData.getNewsSource());
         xaConsultHandler.clickNewsNewsUpload();
-        XACommon.uploadImg(caseData.getNewsUpload(),XACommon.getFilePath("image\\open.png"));
+        //XACommon.uploadImg(caseData.getNewsUpload(),XACommon.getFilePath("image\\open.png"));
+        XACommon.handleUpload(driver.getBrowserType().toString(),caseData.getNewsUpload());
         XACommon.sleep(2000);
         xaConsultHandler.clickAddImgSub();
         XACommon.sleep(1000);
